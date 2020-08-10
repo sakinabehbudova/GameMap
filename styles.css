@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header-container{
+    background: #232323;
+    height: 60px;
+    overflow-y: hidden;
+}
+.logo{
+    margin-top: 17px;
+}
+/*
+.wrapper{
+    max-width: 1108px; 
+} */
+.search-box{
+    position: absolute;
+    margin: auto;
+    overflow-y: hidden;
+}
+.search-box:before{
+    content: "\f002";
+    position: absolute;
+    color: grey;
+    font-family:'FontAwesome';
+    font-weight: 900;
+    line-height: 58px;
+    left: 68%;
+
+}
+.search-icon{
+    margin-bottom: 40px; 
+    margin-left: 50%;
+    position: absolute;
+    margin-left: 200px;
+} 
+#search{
+    margin: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 54px;
+    width: 425px;
+    height: 26px;
+    margin: auto;
+    margin-left: 17.21%; 
+    margin-right: 82.25%; 
+    margin-top: 17px;
+    background-color: #232323;
+    padding: 0 20px;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+::-moz-placeholder { /* Mozilla Firefox  */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+ }
+.start-buttons{
+    margin-top: 17px;
+}
+#sign-in,#register{
+    width: 80.62px;
+    height: 25.86px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #232323;
+    border-radius: 54px;
+    border: 2.5px solid #FF4656;
+}
+#sign-in{
+    left: 77.99%;
+    right: 16.48%;
+    top: 0.35%;
+    bottom: 99.11%;
+    text-decoration: none;
+}
+#register{
+    left: 84.22%;
+    right: 10.29%;
+    text-decoration: none;
+}
+#sign-in:hover{
+    background-color:#FF4656 ;
+}
+ #register:hover{
+    background-color:#FF4656 ;
+}
