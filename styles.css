@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,16 +13,14 @@
 }
 .logo{
     margin-top: 17px;
-
 }
-/*
-.wrapper{
-    max-width: 1108px; 
-} */
+
 .search-box{
-    position: absolute;
+    position: absolute; 
     margin: auto;
     overflow-y: hidden;
+    text-align: center !important;
+    
 }
 .search-box:before{
     content: "\f002";
@@ -30,14 +29,11 @@
     font-family:'FontAwesome';
     font-weight: 900;
     line-height: 58px;
-    left: 68%;
-
+    margin-left: 392px;
 }
 .search-icon{
     margin-bottom: 40px; 
-    margin-left: 50%;
     position: absolute;
-    margin-left: 200px;
 } 
 #search{
     margin: center;
@@ -46,9 +42,7 @@
     border-radius: 54px;
     width: 425px;
     height: 26px;
-    margin: auto;
-    margin-left: 17.21%; 
-    margin-right: 82.25%; 
+    outline: none;
     margin-top: 17px;
     background-color: #232323;
     padding: 0 20px;
@@ -56,8 +50,9 @@
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
+    display: inline-flex;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder { 
     font-style: normal;
     font-weight: 300;
     font-size: 10px;
@@ -80,24 +75,25 @@
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
-    line-height: 12px;
+    line-height: 10px;
     text-align: center;
     color: #FFFFFF;
     background-color: #232323;
     border-radius: 54px;
     border: 2.5px solid #FF4656;
+    text-decoration: none;
 }
 #sign-in{
     left: 77.99%;
     right: 16.48%;
     top: 0.35%;
     bottom: 99.11%;
-    text-decoration: none;
+    
 }
 #register{
     left: 84.22%;
     right: 10.29%;
-    text-decoration: none;
+   
 }
 #sign-in:hover{
     background-color:#FF4656 ;
@@ -108,6 +104,7 @@
 
 /*NAVBAR*/
 nav{ 
+    
    height: 39px;
    left: 0px;
    top: 60px;
@@ -116,6 +113,7 @@ nav{
    overflow-y: hidden;
 }
 nav a{  
+    position: relative;
     font-style: normal;
     font-weight: 600;
     font-size: 11px;
@@ -127,36 +125,38 @@ nav a{
 
 }
 nav a:hover{
-    color: #FF4656;;
+    color: #FF4656;
+    transition: ease-in .3s;
 }
 
-.line{
-    width: 38px;
-    border: 3px solid #FF4656;
-    margin-left: 31.1%;
+nav a:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top:30px;
+    background-color: #FF4656;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    transition: transform .4s;
 }
-nav a:nth-child(2):hover~ .line{
-    width: 91px;
-    transform: translate(80px);
+nav a:hover:after{
+    transform: translateX(-48%) scaleX(1);
+    -webkit-transform: translateX(-48%) scaleX(1);
 }
-nav a:nth-child(3):hover~ .line{
-    width: 57px;
-    transform: translate(214px);
+nav a:nth-child(2):after{
+    width: 72%;
 }
-nav a:nth-child(4):hover~ .line{
-    width: 30px;
-    transform: translate(314px);
+nav a:nth-child(3):after{
+    width: 61%;
 }
-nav a:nth-child(5):hover~ .line{
-    width: 80px;
-    transform: translate(386px);
+nav a:nth-child(4):after{
+    width: 47%;
 }
-nav a:nth-child(6):hover~ .line{
-    width: 72px;
-    transform: translate(510px);
+nav a:nth-child(5):after{
+    width: 68%;
 }
-#home
-{
-    background: #ffffff;
-    background-image:url('image1.png');
+nav a:nth-child(6):after{
+    width: 68%;
 }
