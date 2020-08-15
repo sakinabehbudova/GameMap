@@ -200,10 +200,122 @@ height: 227px;
   }
 .carousel-indicators div {
    margin-bottom: -146px;
-  justify-content:space-between; 
+   justify-content:space-between; 
 }
 .carousel-indicators img:hover{
     background: #FF4656;
 }
+.carousel-caption{
+    font-family: 'Montserrat', sans-serif;
+    top: 136px;
+    position: absolute;
 
- 
+}
+.carousel-caption h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 122.3%;
+    margin-bottom: 28px;
+}
+.carousel-caption .date{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FF4656;
+    margin-bottom: 20px;
+}
+.carousel-caption .vertical{
+    border-left:  1px solid #FF4656;; 
+    height: 40px; 
+    position:absolute;        
+}
+.carousel-caption  p{
+   margin-left: 25px;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 10px;
+   line-height: 12px;
+}
+.carousel-caption .icon1{
+    width: 80px;
+    height: 13.94px;
+    padding-right: 13.94px;
+    padding-left: 21px;
+}
+.carousel-caption .icon2{
+    width: 57.18px;
+    height: 13.94px;
+    padding-right: 18.07px;
+}
+.carousel-caption .icon3{
+    width: 72px;
+    height: 10px;
+}
+.carousel-caption .genre-menu1,.genre-menu2, .genre-menu3{
+    border-radius: 54px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 9px;
+    font-weight: 500;
+    height: 17.16px;
+    line-height: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    margin-top: -2px;
+}
+.carousel-caption .genre-menu1{
+    width: 46.11px;
+    margin-right: 16.08px;
+    margin-left: 20px;
+}
+.carousel-caption .genre-menu2, .genre-menu3{
+    width: 60.05px;
+    font-size: 9px;
+    margin-right: 18.23px;
+}
+.carousel-caption h3,#buy{
+    margin-top: 34px;
+    margin-left: 25px;
+}
+.carousel-caption h3{
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 33px;
+    margin-right: 26px;
+}
+.carousel-caption #buy{
+    width: 106px;
+    height: 36px;
+    background: #FF4656;
+    color: #FFFFFF;
+    border-radius: 54px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration:none ;
+    border: 2px solid #FF4656;
+    outline: none;
+}
+.picture{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 84px;
+    left: 75px;
+}
+.text h4{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #F2F2F2;
+}
+.text p{
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;  
+}
