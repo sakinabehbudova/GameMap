@@ -1,15 +1,9 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-}
+
 /*HEADER*/
-.header-container{
+.header{
     background: #232323;
     height: 60px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .logo{
     margin-top: 17px;
@@ -51,6 +45,7 @@
     font-weight: 300;
     font-size: 10px;
     display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
 }
 ::-webkit-input-placeholder { 
     font-style: normal;
@@ -68,6 +63,8 @@
  }
 .start-buttons{
     margin-top: 17px;
+   justify-content: end;
+   display: flex;
 }
 #sign-in,#register{
     width: 80.62px;
@@ -82,19 +79,12 @@
     border-radius: 54px;
     border: 2.5px solid #FF4656;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 #sign-in{
-    left: 77.99%;
-    right: 16.48%;
-    top: 0.35%;
-    bottom: 99.11%;
-    
+    margin-right: 20.74px;
 }
-#register{
-    left: 84.22%;
-    right: 10.29%;
-   
-}
+
 #sign-in:hover{
     background-color:#FF4656 ;
 }
@@ -103,60 +93,117 @@
 }
 
 /*NAVBAR*/
-nav{ 
-    
-   height: 39px;
+nav{  
+  height: 41px; 
    left: 0px;
    top: 60px;
    background: #FFFFFF;
-   padding: 13px 0;
+   padding-top: 7px;
+  /* padding-bottom: 13px;*/
    overflow-y: hidden;
 }
+nav a:nth-child(1){
+    padding-right: 38px;
+}
+nav a:nth-child(2){
+    padding-right: 40px;
+}
+nav a:nth-child(3){
+    padding-right: 25px;
+}
+nav a:nth-child(4){
+    padding-right: 34px;
+}
+nav a:nth-child(5){
+    padding-right: 38px;
+} 
 nav a{  
     position: relative;
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 13px;
-    text-align: center;
+    font-size: 11px !important;
+    line-height: 13px;  
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none !important;
-    padding:13px 20px;
-
+    padding:13px 0;
+    font-family: 'Montserrat', sans-serif;
 }
 nav a:hover{
     color: #FF4656;
     transition: ease-in .3s;
 }
-
 nav a:after{
     content: "";
     position: absolute;
     width: 50%;
     height: 3px;
-    top:30px;
+    top:34.8px;
     background-color: #FF4656;
-    left: 50%;
+    left: 26%;
     transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
     transform-origin: 50% 50%;
     transition: transform .4s;
 }
 nav a:hover:after{
-    transform: translateX(-48%) scaleX(1);
-    -webkit-transform: translateX(-48%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+    -webkit-transform: translateX(-50%) scaleX(1);
 }
 nav a:nth-child(2):after{
-    width: 72%;
+    width: 71%;
+    left: 35%;
 }
 nav a:nth-child(3):after{
-    width: 61%;
+    width: 70%;
+    left: 36%;
 }
 nav a:nth-child(4):after{
     width: 47%;
 }
 nav a:nth-child(5):after{
     width: 68%;
+    left: 35%;
 }
 nav a:nth-child(6):after{
-    width: 68%;
+    width: 98%;
+    left: 50%;
 }
+/*Home*/
+#home{
+    background-color: #232323;
+    padding-bottom: 200px;
+}
+.carousel-inner{
+    height: 624px;
+}
+.carousel-item {
+    position: relative;
+  }
+.carousel-indicators img{  
+height: 227px;   
+}
+.carousel-indicators img:nth-child(1){  
+    width: 464px; 
+ }
+ .carousel-indicators img:nth-child(3){  
+    width: 478px; 
+ }
+ .image1 {
+    position: relative;
+  }
+  .image2 {
+    position: absolute;
+    width: 476.9px;
+    height: 596.12px;
+    left: 823.81px;
+    top: 10px;  
+  }
+.carousel-indicators div {
+   margin-bottom: -146px;
+  justify-content:space-between; 
+}
+.carousel-indicators img:hover{
+    background: #FF4656;
+}
+
+ 
