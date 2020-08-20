@@ -1,4 +1,6 @@
-
+body{
+    overflow-x: hidden;
+}
 /*HEADER*/
 .header{
     background: #232323;
@@ -63,7 +65,7 @@
  }
 .start-buttons{
     margin-top: 17px;
-   justify-content: end;
+   justify-content: flex-end;
    display: flex;
 }
 #sign-in,#register{
@@ -190,17 +192,17 @@ height: 227px;
  }
  .image1 {
     position: relative;
-  }
+ }
   .image2 {
     position: absolute;
     width: 476.9px;
     height: 596.12px;
     left: 823.81px;
     top: 10px;  
-  }
-.carousel-indicators div {
+ }
+.carousel-indicators .picture {
    margin-bottom: -146px;
-   justify-content:space-between; 
+   width:100%;
 }
 .carousel-indicators img:hover{
     background: #FF4656;
@@ -208,7 +210,6 @@ height: 227px;
 .carousel-caption{
     font-family: 'Montserrat', sans-serif;
     top: 136px;
-    position: absolute;
 
 }
 .carousel-caption h2{
@@ -299,7 +300,7 @@ height: 227px;
     outline: none;
 }
 .picture{
-    position: relative;
+    position: absolute;
 }
 .text{
     position: absolute;
@@ -319,3 +320,58 @@ height: 227px;
     line-height: 12px;
     color: #FFFFFF;  
 }
+
+.carousel .carousel-item>img {
+    position: absolute;
+  
+}
+
+/*Icons*/
+#icons{
+    background-color: #232323;
+    padding-bottom: 114px;
+}
+#icons img{
+background-color:#292929 ;
+}
+.firstrow{
+    padding-top: 123px;
+margin-bottom: 27px;
+}
+.icon-box{
+    width: 165px;
+    height: 169px;
+    background-color: #292929;
+}
+.icon-img1{
+    margin: 21px 3px 11px 6px;
+}
+.icon-img2{
+    margin:14px 24px 14px 27px;
+}
+.icon-img3{
+    margin: 6px 16px 0 19px;
+}
+.icon-img4{
+    margin: 7px 23px 11px 20px;
+}
+.viewMore{
+    width: 87px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 236px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 128.8%;
+    border: none;
+    outline: none !important;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 107px;
+    margin-left: 100px;
+}
+
+
+
