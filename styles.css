@@ -87,12 +87,11 @@ body{
     margin-right: 20.74px;
 }
 
-#sign-in:hover{
+#sign-in:hover,#register:hover{
     background-color:#FF4656 ;
+    transition: .3s ease-in-out;
 }
- #register:hover{
-    background-color:#FF4656 ;
-}
+ 
 
 /*NAVBAR*/
 nav{  
@@ -206,6 +205,7 @@ height: 227px;
 }
 .carousel-indicators img:hover{
     background: #FF4656;
+    transition: .3s ease-in-out;
 }
 .carousel-caption{
     font-family: 'Montserrat', sans-serif;
@@ -335,7 +335,7 @@ background-color:#292929 ;
 }
 .firstrow{
     padding-top: 123px;
-margin-bottom: 27px;
+    margin-bottom: 27px;
 }
 .icon-box{
     width: 165px;
@@ -354,7 +354,6 @@ margin-bottom: 27px;
 .icon-img4{
     margin: 7px 23px 11px 20px;
 }
-
 .viewMore{
     width: 87px;
     height: 28px;
@@ -376,6 +375,7 @@ margin-bottom: 27px;
     background-color: #232323;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    height: auto;
 }
 #discounted h3{
     margin-top: 114px;
@@ -386,16 +386,19 @@ margin-bottom: 27px;
     line-height: 128.8%;
     color: #FFFFFF;
 }
-#discounted hr{
+#discounted .line1{
     height: 4px; 
     background-color: #FF4656;
     width: 67px; 
     margin-bottom: 44px;
 }
-
+.game-image:hover {
+ /*   -webkit-filter: brightness(50%); */
+    opacity: .5;
+    background-color: #ff4656;
+    transition: .3s ease-in-out;
+}
 .game-name{
-    height: 28px;
-    width: 147;
     font-style: normal;
     font-weight: 700;
     font-size: 12px !important;
@@ -413,7 +416,7 @@ margin-bottom: 27px;
     font-size: 7px !important;
     line-height: 5px ;
     border:rgba(255, 255, 255, 0.1) ;
-    margin: 27px 18px 12px -25px;
+    margin: 27px 38px 13px -25px;
 }
 .vector{
    margin-top: 2px;
@@ -427,7 +430,7 @@ margin-bottom: 27px;
 .game .date{
     font-style: normal;
     font-weight: bold;
-    font-size: 8px;
+    font-size: 9px;
     line-height: 10px;
     color: #FF4656;
     margin-bottom: 18px;
@@ -437,14 +440,57 @@ margin-bottom: 27px;
     width: 83px;
     height: 44px;
     background: #FF4656;
-   border-top-right-radius: 54px;
-   border-bottom-right-radius: 54px;
+    border-top-right-radius: 54px;
+    border-bottom-right-radius: 54px; 
 }
-.sale span{
+.sale p{
+   
     font-style: normal;
     font-weight: bold;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 42px; 
+    margin-top: 11px !important;
+    margin-left: 18px;
 }
+.sale .arrow{
+    margin-top: -93px;
+    margin-left: 50px;
+    line-height: 40px;
+    width: 15px;
+    box-sizing: border-box;
 
-
+}
+.price{
+    width: 62px;
+    height: 21px;
+    margin-left: 10px;
+}
+.price p{
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22px;
+   color: #FF4656;
+   margin-top: 20px;
+}
+.old-price{
+   width: 64px;
+   height: 21px;
+   margin-top: 20px;
+   margin-left: -5px;
+}
+.old-price s{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 22px;  
+   color: #3E3E3E;   
+}
+#discounted .line2{
+   width: 262px;
+   height: 4px;
+   background-color: #FF4656;
+   margin-top: -0.8px;
+}
+#discounted .col-md-3{
+    margin-bottom: 8px;
+}
