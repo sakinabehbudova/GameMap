@@ -181,11 +181,15 @@ nav a:nth-child(6):after{
     position: relative;
   }
 .carousel-indicators img{  
-height: 227px;   
+  height: 227px; 
+  width: 100%;  
+  object-fit: cover;
 }
-.carousel-indicators img:nth-child(1){  
-    width: 464px; 
- }
+.carousel-indicators{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
  .carousel-indicators img:nth-child(3){  
     width: 478px; 
  }
@@ -196,7 +200,7 @@ height: 227px;
     position: absolute;
     width: 476.9px;
     height: 596.12px;
-    left: 823.81px;
+    left: 823.81px; 
     top: 10px;  
  }
 .carousel-indicators .picture {
@@ -204,6 +208,7 @@ height: 227px;
    width:100%;
 }
 .carousel-indicators img:hover{
+    transform: scale(1.07);
     background: #FF4656;
     transition: .3s ease-in-out;
 }
