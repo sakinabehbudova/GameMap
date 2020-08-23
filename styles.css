@@ -186,17 +186,17 @@ nav a:nth-child(6):after{
   object-fit: cover;
 }
 .carousel-indicators{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 100% ;
+    padding: 0 !important;
+    margin: 0 !important;
 }
  .carousel-indicators img:nth-child(3){  
     width: 478px; 
  }
- .image1 {
+ #home .image1 {
     position: relative;
  }
-  .image2 {
+  #home .image2 {
     position: absolute;
     width: 476.9px;
     height: 596.12px;
@@ -208,13 +208,16 @@ nav a:nth-child(6):after{
    width:100%;
 }
 .carousel-indicators img:hover{
-    transform: scale(1.07);
+    transform: scale(1.075);
     background: #FF4656;
     transition: .3s ease-in-out;
 }
 .carousel-caption{
     font-family: 'Montserrat', sans-serif;
     top: 136px;
+    margin: 0 !important;
+    padding: 0 !important;
+    left: 14.5% !important;
 
 }
 .carousel-caption h2{
@@ -280,9 +283,12 @@ nav a:nth-child(6):after{
     font-size: 9px;
     margin-right: 18.23px;
 }
-.carousel-caption h3,#buy{
+.carousel-caption h3,.buy{
     margin-top: 34px;
     margin-left: 25px;
+}
+.carousel-caption .buy:hover{
+    color: #FFFFFF;
 }
 .carousel-caption h3{
     font-weight: bold;
@@ -290,7 +296,7 @@ nav a:nth-child(6):after{
     line-height: 33px;
     margin-right: 26px;
 }
-.carousel-caption #buy{
+.carousel-caption .buy{
     width: 106px;
     height: 36px;
     background: #FF4656;
@@ -300,7 +306,7 @@ nav a:nth-child(6):after{
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    text-decoration:none ;
+    text-decoration:none !important;
     border: 2px solid #FF4656;
     outline: none;
 }
@@ -336,11 +342,12 @@ nav a:nth-child(6):after{
     background-color: #232323;
 }
 #icons img{
-background-color:#292929 ;
+    background-color:#292929 ;
+    object-fit: contain;
+
 }
 .firstrow{
     padding-top: 123px;
-    margin-bottom: 27px;
 }
 .icon-box{
     width: 165px;
@@ -396,6 +403,11 @@ background-color:#292929 ;
     background-color: #FF4656;
     width: 67px; 
     margin-bottom: 44px;
+}
+.game-image{
+    object-fit: cover;
+    width: 100%;
+    height: 238px;
 }
 .game-image:hover {
  /*   -webkit-filter: brightness(50%); */
@@ -499,3 +511,32 @@ background-color:#292929 ;
 #discounted .col-md-3{
     margin-bottom: 8px;
 }
+/*Second Carousel*/
+#carousel{
+    background-color: #232323;
+    padding-top: 169px;
+    padding-bottom: 60px;
+}
+#secondCarousel .carousel-inner{
+    height: 554px;
+}
+#secondCarousel .image3{
+    position: relative;  
+}
+#secondCarousel .image4{
+    position: absolute;   
+    width: 688px;
+    height: 721px;
+    left: 631px;
+    top: -123.45px;
+    transform: rotate(-8.9deg);
+}
+#secondCarousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  #secondCarousel .carousel-indicators{
+      bottom: -55px;
+  }
+
