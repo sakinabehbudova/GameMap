@@ -1,6 +1,3 @@
-body{
-    overflow-x: hidden;
-}
 /*HEADER*/
 .header{
     background: #232323;
@@ -207,9 +204,18 @@ nav a:nth-child(6):after{
    margin-bottom: -146px;
    width:100%;
 }
-.carousel-indicators img:hover{
+.picture img:hover{
     transform: scale(1.075);
     background: #FF4656;
+    transition: .3s ease-in-out;
+}
+.text:hover .picture img{
+    transform: scale(1.075) !important;
+    background: #FF4656 !important;
+    transition: .3s ease-in-out;
+}
+.picture:hover .h4,.h4:hover{
+    font-size: 25px;
     transition: .3s ease-in-out;
 }
 .carousel-caption{
@@ -366,6 +372,21 @@ nav a:nth-child(6):after{
 .icon-img4{
     margin: 7px 23px 11px 20px;
 }
+.icon-box:hover{
+    background-color: #FF4656;
+    transition: .3s ease-in-out;
+}
+.icon-box:hover .icon-img1, .icon-box:hover .icon-img2, .icon-box:hover .icon-img3, .icon-box:hover .icon-img4{
+    background-color: #FF4656 !important;
+    transition: .3s ease-in-out;
+
+}
+.icon-img1:hover,.icon-img2:hover,.icon-img3:hover,.icon-img4:hover{
+    background-color: #FF4656 !important;
+    transition: .3s ease-in-out;
+   /* opacity: .4; */
+}
+
 .viewMore{
     width: 87px;
     height: 28px;
@@ -452,6 +473,7 @@ nav a:nth-child(6):after{
     color: #FF4656;
     margin-bottom: 18px;
     margin-left: 18px;
+    margin-top: -4px;
 }
 .sale{
     width: 83px;
@@ -502,7 +524,7 @@ nav a:nth-child(6):after{
    line-height: 22px;  
    color: #3E3E3E;   
 }
-#discounted .line2{
+ .line2{
    width: 262px;
    height: 4px;
    background-color: #FF4656;
@@ -515,21 +537,27 @@ nav a:nth-child(6):after{
 #carousel{
     background-color: #232323;
     padding-top: 169px;
-    padding-bottom: 60px;
+    padding-bottom: 46px;
+    order: -5;
+}
+#secondCarousel{
+    order: -3;
+    
 }
 #secondCarousel .carousel-inner{
     height: 554px;
 }
 #secondCarousel .image3{
-    position: relative;  
+    position: relative; 
 }
 #secondCarousel .image4{
-    position: absolute;   
+    position: absolute ;   
     width: 688px;
     height: 721px;
     left: 631px;
-    top: -123.45px;
+    top: -153.45px;
     transform: rotate(-8.9deg);
+    order: 5;
 }
 #secondCarousel .carousel-indicators li {
     width: 10px;
@@ -540,3 +568,115 @@ nav a:nth-child(6):after{
       bottom: -55px;
   }
 
+/*New*/
+#new{
+    padding-bottom: 20px;
+    background-color:#232323;
+    font-family: 'Montserrat', sans-serif;
+}
+#new h3{
+    margin-top: 114px;
+    margin-bottom: -5px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 128.8%;
+    color: #FFFFFF;
+}
+#new .line3{
+    height: 4px; 
+    background-color: #FF4656;
+    width: 52px; 
+   
+}
+.new-game-image{
+    object-fit: cover;
+    width: 100%;
+    height: 238px;
+}
+.price-new{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 18px;
+    color: #FFFFFF;
+    margin-bottom: -7px;
+    margin-top: 6px;
+}
+.circle{
+    width: 43px;
+    height: 43px;
+    margin-top: 96px;
+    margin-bottom: 91px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 42px;
+}
+.circle-inner{
+   line-height:38px;
+   margin-left: 11px;
+}
+/*Footer*/
+#footer{
+    min-height: 300px;
+    background: #323232;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-inner{
+    padding-top: 83px;
+}
+.about{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 181.9%;
+    color: rgba(255, 255, 255, 0.3);
+}
+.social-icon{
+    width: 43px;
+    height: 43px;
+    background: #FF4656;
+    border-radius: 42px;
+    margin-right: 12px;
+    display: inline-block !important;
+}
+.footer-text1{
+    width: 211px;
+    height: 182px;
+    color: rgba(255, 255, 255, 0.3);
+}
+.footer-text2{
+     width: 184px;
+     height: 182px;
+     color: rgba(255, 255, 255, 0.3);
+}
+#social-icons{
+    margin-left: 182px;
+}
+#social-icons .icon-image1{
+    margin-left: 14px;
+    margin-top: 12px;
+}
+#social-icons .icon-image2{
+    margin-left: 12px;
+    margin-top: 13px;
+}
+#social-icons .icon-image3{
+    margin-left: 10px;
+    margin-top: 11px;
+}
+.contact p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 181.9%;
+    color: rgba(255, 255, 255, 0.3);
+}
+#footer h6{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 181.9%;
+color: #FFFFFF;
+}
+
+  
