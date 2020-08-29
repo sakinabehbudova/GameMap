@@ -177,12 +177,12 @@ nav a:nth-child(6):after{
 .carousel-item {
     position: relative;
   }
-.carousel-indicators img{  
+#home .carousel-indicators img{  
   height: 227px; 
   width: 100%;  
   object-fit: cover;
 }
-.carousel-indicators{
+#home .carousel-indicators{
     width: 100% ;
     padding: 0 !important;
     margin: 0 !important;
@@ -538,11 +538,6 @@ nav a:nth-child(6):after{
     background-color: #232323;
     padding-top: 169px;
     padding-bottom: 46px;
-    order: -5;
-}
-#secondCarousel{
-    order: -3;
-    
 }
 #secondCarousel .carousel-inner{
     height: 554px;
@@ -557,15 +552,28 @@ nav a:nth-child(6):after{
     left: 631px;
     top: -153.45px;
     transform: rotate(-8.9deg);
-    order: 5;
 }
-#secondCarousel .carousel-indicators li {
-    width: 10px;
-    height: 10px;
+#secondCarousel .carousel-indicator {
+    width: 10px !important;
+    height: 10px !important;
     border-radius: 100%;
   }
-  #secondCarousel .carousel-indicators{
-      bottom: -55px;
+#secondCarousel .carousel-indicators{
+     bottom: -55px;
+}
+.image5{
+    position:  absolute;
+    width: 436px;
+    height: 626px;
+    left: 760px;
+    bottom: 17px;
+  }
+.image6{
+   position: absolute;
+   width: 583px;
+   height: 682px;
+   left: 671px;
+   bottom: 0;
   }
 
 /*New*/
@@ -680,3 +688,79 @@ color: #FFFFFF;
 }
 
   
+
+
+/*slide*/
+.hi-slide {
+     position: relative;
+     width: 754px;
+     height: 342px;
+     margin: 0 auto 0;
+     padding-top: 30px;
+     padding-bottom: 20px;
+ }
+          
+.hi-slide .hi-next,
+.hi-slide .hi-prev 
+            {
+              position: absolute;
+              top: 50%; 
+              width: 40px;
+              height: 40px; 
+              margin-top: -20px;   
+              border-radius: 100%;  
+                 
+                
+              line-height: 37px;
+              text-align: center; 
+              cursor: pointer;
+              background: rgba(255, 255, 255, 0.1); 
+              color: black;               
+              transition: all 0.6s;
+              font-size: 20px; 
+                font-weight: bold;
+            }
+           .hi-slide .hi-next:hover, 
+            .hi-slide .hi-prev:hover 
+            {
+            opacity: 1; 
+            background-color: #fff;  
+            }
+            
+           .hi-slide .hi-prev { left: -60px; }
+         
+           
+            
+    .hi-slide .hi-prev::before { content: '<'; }
+    .hi-slide .hi-next { right: -60px; }
+    .hi-slide .hi-next::before { content: '>'; }
+    
+            .hi-slide > ul
+                    { 
+                        list-style: none; 
+                        position: relative;
+                        width: 754px; 
+                        height: 292px; 
+                        margin: 0;
+                        padding: 0;
+            }
+            
+            
+        .hi-slide > ul > li {
+            overflow: hidden; 
+            position: absolute; 
+            z-index: 0; 
+            left: 377px;
+            top: 146px; 
+            width: 0; 
+            height: 0; 
+            margin: 0; 
+            padding: 0;
+            background-color: #333; 
+            cursor: pointer; }
+            
+        .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+
+        img{
+          object-fit: cover;
+        }
