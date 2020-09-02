@@ -171,7 +171,7 @@ nav a:nth-child(6):after{
 /*Home*/
 #home{
     background-color: #232323;
-    padding-bottom: 200px;
+    padding-bottom: 274px;
 }
 .carousel-inner{
     height: 624px;
@@ -378,13 +378,12 @@ nav a:nth-child(6):after{
 }
 .firstrow{
     padding-top: 123px;
-    margin-left: 50px;
-
 }
 .icon-box{
-    width: 165px;
-    height: 169px;
+    width: 170px;
+    height: 170px;
     background-color: #292929;
+    margin-right: -28px;
 }
 .icon-img1{
     margin: 21px 3px 11px 6px;
@@ -459,7 +458,7 @@ nav a:nth-child(6):after{
 .game-image{
     object-fit: cover;
     width: 100%;
-    height: 238px;
+    height: 270px;
 }
 .game-image:hover {
  /*   -webkit-filter: brightness(50%); */
@@ -562,7 +561,7 @@ nav a:nth-child(6):after{
    color: #3E3E3E;   
 }
  .line2{
-   width: 262px;
+   width: 256px;
    height: 4px;
    background-color: #FF4656;
    margin-top: -0.8px;
@@ -618,7 +617,7 @@ nav a:nth-child(6):after{
 
 /*New*/
 #new{
-    padding-bottom: 20px;
+    padding-bottom: 226px;
     background-color:#232323;
     font-family: 'Montserrat', sans-serif;
 }
@@ -640,7 +639,7 @@ nav a:nth-child(6):after{
 .new-game-image{
     object-fit: cover;
     width: 100%;
-    height: 238px;
+    height: 270px;
 }
 #new a{
     text-decoration: none;
@@ -655,7 +654,14 @@ nav a:nth-child(6):after{
     margin-bottom: -7px;
     margin-top: 6px;
 }
-.circle{
+#back-to-top-btn{
+    position: fixed;
+    display: none;
+    right: 120px;
+    bottom: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
     width: 43px;
     height: 43px;
     margin-top: 96px;
@@ -663,13 +669,45 @@ nav a:nth-child(6):after{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 42px;
 }
-.circle-inner{
+#back-to-top-btn img{
    line-height:38px;
-   margin-left: 11px;
+   margin-bottom: 5px;
+   margin-left: 1px;
 }
-.circle:hover{
+#back-to-top-btn:hover,#back-to-top-btn:focus{
     cursor: pointer;
-    opacity: .8;
+    opacity: .6;
+    transition: .2s ease-in-out;
+}
+.btnEntrance {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+/*zoomIn*/
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.btnExit {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+/*zoomOut*/
+@keyframes btnExit {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    }
 }
 /*Footer*/
 #footer{
@@ -761,6 +799,7 @@ nav a:nth-child(6):after{
 #specials{
     background-color: #232323;
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
 }
 .hi-slide {
      position: relative;
@@ -775,12 +814,12 @@ nav a:nth-child(6):after{
      color: rgba(255, 255, 255, 0.1);
  }
  .hi-prev{
-     margin-left: 300px;
-     margin-top: 360px;
+     margin-left: 290px;
+     margin-top: 380px;
  }
  .hi-next{
-    margin-left: 350px;
-    margin-top: 360px;
+    margin-left: 340px;
+    margin-top: 380px;
 }
 .hi-prev:hover .fa-chevron-circle-left{
     opacity: .8;
@@ -864,8 +903,8 @@ nav a:nth-child(6):after{
     position:absolute; 
 }
 .game-text{
-     width: 452px;
-     height: 120px;
+     width: 402px;
+     height: 150px;
      font-weight: normal;
      font-size: 14px;
      line-height: 142.8%;
