@@ -1,3 +1,4 @@
+  //The button scrool up to top
 const backToTopButton = document.getElementById('back-to-top-btn');
 
 window.addEventListener('scroll', scrollFunction);
@@ -22,13 +23,9 @@ function scrollFunction() {
 }
 
 backToTopButton.addEventListener("click", smoothScroll);
-
-//function backToTop() {
-//    window.scrollTo(0, 0); }
-
-
-
 function smoothScroll() {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute("href")==="#" ? "header" : event.currentTarget.getAttribute("href");
     const targetPoition = 0;
     const startPosition = window.pageYOffset;
     const distance = targetPoition - startPosition;

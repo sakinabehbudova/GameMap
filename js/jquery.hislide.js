@@ -18,9 +18,9 @@
         // 规定好每张图片处于的位置和状态
         var states = [
             { $zIndex: 1, width: 130, height: 175, top: 94, left: 134, $opacity: 0.2 }, 
-            { $zIndex: 2, width: 130, height: 170, top: 85, left: -59, $opacity: 0.4 }, 
-            { $zIndex: 3, width: 208, height: 254, top: 41, left: 95, $opacity: 0.7 }, 
-            { $zIndex: 4, width: 284, height: 331, top: 0, left: 325, $opacity: 1 }, 
+            { $zIndex: 2, width: 120, height: 170, top: 85, left: -59, $opacity: 0.4 }, 
+            { $zIndex: 3, width: 198, height: 254, top: 41, left: 95, $opacity: 0.7 }, 
+            { $zIndex: 4, width: 274, height: 331, top: 0, left: 325, $opacity: 1 }, 
 
         ];
 

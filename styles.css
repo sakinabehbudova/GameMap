@@ -1,5 +1,8 @@
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
 /*HEADER*/
-.header{
+.header{ 
     background: #232323;
     height: 60px;
     overflow: hidden;
@@ -46,19 +49,18 @@
     font-weight: 300;
     font-size: 10px;
     display: inline-flex;
-    font-family: 'Montserrat', sans-serif;
 }
 ::-webkit-input-placeholder { 
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 12px !important;
+    line-height: 15px;
     color: rgba(255, 255, 255, 0.5);
 }
 ::-moz-placeholder { /* Mozilla Firefox  */
     font-style: normal;
     font-weight: 300;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.5);
  }
@@ -68,19 +70,18 @@
    display: flex;
 }
 #sign-in,#register{
-    width: 80.62px;
-    height: 25.86px;
+    width: 96px;
+    height: 31px;
     font-style: normal;
     font-weight: bold;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 13px;
+    line-height: 14px;
     text-align: center;
     color: #FFFFFF;
     background-color: #232323;
     border-radius: 54px;
     border: 2.5px solid #FF4656;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
 }
 #sign-in{
     margin-right: 20.74px;
@@ -102,31 +103,20 @@ nav{
   /* padding-bottom: 13px;*/
    overflow-y: hidden;
 }
-nav a:nth-child(1){
-    padding-right: 38px;
+nav a{
+    padding-right: 53px;
 }
-nav a:nth-child(2){
-    padding-right: 40px;
-}
-nav a:nth-child(3){
-    padding-right: 25px;
-}
-nav a:nth-child(4){
-    padding-right: 34px;
-}
-nav a:nth-child(5){
-    padding-right: 38px;
-} 
 nav a{  
     position: relative;
     font-style: normal;
     font-weight: 600;
-    font-size: 11px !important;
-    line-height: 13px;  
+    font-size: 13px !important;
+    line-height: 16px;  
     color: rgba(0, 0, 0, 0.3);
     text-decoration: none !important;
     padding:13px 0;
-    font-family: 'Montserrat', sans-serif;
+    padding-right: 53px;
+    
 }
 nav a:hover{
     color: #FF4656;
@@ -135,11 +125,11 @@ nav a:hover{
 nav a:after{
     content: "";
     position: absolute;
-    width: 50%;
+    width: 45%;
     height: 3px;
-    top:34.8px;
+    top:38.4px;
     background-color: #FF4656;
-    left: 26%;
+    left: 22%;
     transform: translateX(-50%) scaleX(0);
     -webkit-transform: translateX(-50%) scaleX(0);
     transform-origin: 50% 50%;
@@ -150,23 +140,25 @@ nav a:hover:after{
     -webkit-transform: translateX(-50%) scaleX(1);
 }
 nav a:nth-child(2):after{
-    width: 71%;
-    left: 35%;
+    width: 68%;
+    left: 34%;
 }
 nav a:nth-child(3):after{
-    width: 70%;
-    left: 36%;
+    width: 55%;
+    left: 28%;
 }
 nav a:nth-child(4):after{
-    width: 47%;
+    width: 42%;
+    left: 21%;
+
 }
 nav a:nth-child(5):after{
-    width: 68%;
-    left: 35%;
+    width: 64%;
+    left: 33%;
 }
 nav a:nth-child(6):after{
-    width: 98%;
-    left: 50%;
+    width: 62%;
+    left: 32%;
 }
 /*Home*/
 #home{
@@ -202,6 +194,27 @@ nav a:nth-child(6):after{
     left: 823.81px; 
     top: 10px;  
  }
+ #home .image7 {
+    position: relative;
+ }
+  #home .image8 {
+    position: absolute;
+    width: 416px;
+    height: 600px;
+    left: 821px;
+    top: 56px;
+ }
+ #home .image9 {
+    position: relative;
+ }
+  #home .image10 {
+    position: absolute;
+    width: 450px;
+    height: 526px;
+    left: 826px;
+    top: 40px;
+ }
+
 .carousel-indicators .picture {
    margin-bottom: -146px !important;
    width:100%;
@@ -218,6 +231,7 @@ nav a:nth-child(6):after{
 }
 .picture:hover .h4,.h4:hover{
     font-size: 25px;
+    line-height: 116%;
     transition: .3s ease-in-out;
 }
 .picture:hover .title2{
@@ -233,7 +247,6 @@ nav a:nth-child(6):after{
     width: 89%;
 }
 .carousel-caption{
-    font-family: 'Montserrat', sans-serif;
     top: 136px;
     margin: 0 !important;
     padding: 0 !important;
@@ -242,7 +255,7 @@ nav a:nth-child(6):after{
 .carousel-caption h2{
     font-style: normal;
     font-weight: bold;
-    font-size: 33px;
+    font-size: 35px;
     line-height: 122.3%;
     margin-bottom: 28px;
 }
@@ -259,57 +272,55 @@ nav a:nth-child(6):after{
 .carousel-caption .date{
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 24px;
     color: #FF4656;
     margin-bottom: 20px;
 }
 .carousel-caption .vertical{
-    border-left:  1px solid #FF4656;; 
-    height: 40px; 
+    border-left:  2px solid #FF4656;; 
+    height: 47px; 
     position:absolute;        
 }
 .carousel-caption  p{
    margin-left: 25px;
    font-style: normal;
    font-weight: bold;
-   font-size: 10px;
-   line-height: 12px;
+   font-size: 12px;
+   line-height: 15px;
 }
 .icon1{
     width: 80px;
-    height: 13.94px;
+    height: 15px;
     padding-right: 13.94px;
     padding-left: 21px;
 }
  .icon2{
     width: 57.18px;
-    height: 13.94px;
+    height: 15px;
     padding-right: 18.07px;
 }
  .icon3{
     width: 72px;
-    height: 10px;
+    height: 11px;
 }
 .genre-menu1,.genre-menu2, .genre-menu3{
     border-radius: 54px;
     color: rgba(255, 255, 255, 0.3);
     font-size: 9px;
     font-weight: 500;
-    height: 17.16px;
-    line-height: 15px;
+    height: 20px;
+    width: 70px;
+    line-height: 21px;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    margin-top: -2px;
+    font-size: 11px;
 }
  .genre-menu1{
-    width: 46.11px;
     margin-right: 16.08px;
     margin-left: 20px;
 }
  .genre-menu2, .genre-menu3{
-    width: 60.05px;
-    font-size: 9px;
     margin-right: 18.23px;
 }
 .carousel-caption h3,.buy{
@@ -321,19 +332,19 @@ nav a:nth-child(6):after{
 }
 .carousel-caption h3{
     font-weight: bold;
-    font-size: 27px;
-    line-height: 33px;
+    font-size: 30px;
+    line-height: 37px;
     margin-right: 26px;
 }
  .buy{
-    width: 106px;
-    height: 36px;
+    width: 127px;
+    height: 43px;
     background: #FF4656;
     color: #FFFFFF !important;
     border-radius: 54px;
     font-weight: bold !important;
-    font-size: 14px ;
-    line-height: 17px;
+    font-size: 20px ;
+    line-height: 24px;
     text-align: center;
     text-decoration:none !important;
     border: 2px solid #FF4656;
@@ -415,14 +426,12 @@ nav a:nth-child(6):after{
 }
 
 .viewMore{
-    width: 87px;
-    height: 28px;
+    width: 115px;
+    height: 37px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 236px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 128.8%;
     border: none;
     outline: none !important;
@@ -434,7 +443,6 @@ nav a:nth-child(6):after{
 #discounted{
     background-color: #232323;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     height: auto;
 }
 #discounted h3{
@@ -442,7 +450,7 @@ nav a:nth-child(6):after{
     margin-bottom: -5px;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 128.8%;
     color: #FFFFFF;
 }
@@ -460,19 +468,48 @@ nav a:nth-child(6):after{
     width: 100%;
     height: 270px;
 }
-.game-image:hover {
- /*   -webkit-filter: brightness(50%); */
-    opacity: .5;
-    background-color: #ff4656;
-    transition: .3s ease-in-out;
+.game{
+    position: relative;
 }
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 270px;
+    width: 100%;
+    transition: .3s ease-in-out;
+    background-color: #FF4656;
+} 
+.game:hover  .overlay{
+    opacity: .6;
+}
+/*.game:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:#FF4656;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: .6;
+    height: 270px;
+}*/
+
 .game-name{
+    max-width: 190px;
+    height: 35px;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 116.8%;
     color: #FFFFFF;
-    margin: 27px 5px 0px 18px;
+    margin-top: 27px;
 }
 .game-name a{
     color: #FFFFFF;
@@ -481,21 +518,17 @@ nav a:nth-child(6):after{
     color: #FFFFFF !important;
 }
 .game .btn{
-    width: 74px !important;
-    height: 28px !important;
+    width: 44px !important;
+    height: 44px !important;
     background: rgba(255, 255, 255, 0.1) !important;
     border-radius: 236px !important;
-    font-style: normal !important;
-    font-weight: bold !important;
-    font-size: 7px !important;
     line-height: 5px ;
     border:rgba(255, 255, 255, 0.1) ;
-    margin: 27px 38px 13px -25px;
+    margin-top: 27px;
 }
 .vector{
    margin-top: 2px;
    margin-bottom: 5px;
-   margin-left: 2.71px;
 }
 .btn:focus {
     outline: none;
@@ -504,11 +537,10 @@ nav a:nth-child(6):after{
 .game .date{
     font-style: normal;
     font-weight: bold;
-    font-size: 9px;
-    line-height: 10px;
+    font-size:11px;
+    line-height: 13px;
     color: #FF4656;
     margin-bottom: 18px;
-    margin-left: 18px;
     margin-top: -4px;
 }
 .sale{
@@ -522,18 +554,10 @@ nav a:nth-child(6):after{
    
     font-style: normal;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 42px; 
     margin-top: 11px !important;
     margin-left: 18px;
-}
-.sale .arrow{
-    margin-top: -93px;
-    margin-left: 50px;
-    line-height: 40px;
-    width: 15px;
-    box-sizing: border-box;
-
 }
 .price{
     width: 62px;
@@ -543,8 +567,8 @@ nav a:nth-child(6):after{
 .price p{
    font-style: normal;
    font-weight: bold;
-   font-size: 18px;
-   line-height: 22px;
+   font-size: 20px;
+   line-height: 24px;
    color: #FF4656;
    margin-top: 20px;
 }
@@ -619,14 +643,13 @@ nav a:nth-child(6):after{
 #new{
     padding-bottom: 226px;
     background-color:#232323;
-    font-family: 'Montserrat', sans-serif;
 }
 #new h3{
     margin-top: 114px;
     margin-bottom: -5px;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 128.8%;
     color: #FFFFFF;
 }
@@ -647,10 +670,9 @@ nav a:nth-child(6):after{
 .price-new{
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    margin-left: 18px;
-    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FF4656;
     margin-bottom: -7px;
     margin-top: 6px;
 }
@@ -662,10 +684,8 @@ nav a:nth-child(6):after{
     z-index: 99;
     border: none;
     outline: none;
-    width: 43px;
-    height: 43px;
-    margin-top: 96px;
-    margin-bottom: 91px;
+    width: 57px;
+    height: 57px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 42px;
 }
@@ -674,9 +694,9 @@ nav a:nth-child(6):after{
    margin-bottom: 5px;
    margin-left: 1px;
 }
-#back-to-top-btn:hover,#back-to-top-btn:focus{
+#back-to-top-btn:hover{
     cursor: pointer;
-    opacity: .6;
+    opacity: .7 !important;
     transition: .2s ease-in-out;
 }
 .btnEntrance {
@@ -684,14 +704,15 @@ nav a:nth-child(6):after{
     animation-fill-mode: both;
     animation-name: btnEntrance;
 }
-/*zoomIn*/
+/*fadeInUp*/
 @keyframes btnEntrance {
     from {
         opacity: 0;
-        transform: scale3d(0.3,0.3,0.3);
+        transform: translate3d(0,100%,0);
     }
     to{
         opacity: 1;
+        transform: translate3d(0,0,0);
     }
 }
 .btnExit {
@@ -699,21 +720,20 @@ nav a:nth-child(6):after{
     animation-fill-mode: both;
     animation-name: btnExit;
 }
-/*zoomOut*/
+/*fadeOutDown*/
 @keyframes btnExit {
-    from{
+    from {
         opacity: 1;
     }
-    to{
+    to {
         opacity: 0;
-        transform: scale3d(0.3,0.3,0.3);
+        transform: translate3d(0,100%,0);
     }
 }
 /*Footer*/
 #footer{
     height: 526px;
     background: #323232;
-    font-family: 'Montserrat', sans-serif;
 }
 .footer-inner{
     padding-top: 125px; 
@@ -798,7 +818,6 @@ nav a:nth-child(6):after{
 /*slide*/
 #specials{
     background-color: #232323;
-    font-family: 'Montserrat', sans-serif;
     padding-bottom: 15px;
 }
 .hi-slide {
@@ -814,12 +833,12 @@ nav a:nth-child(6):after{
      color: rgba(255, 255, 255, 0.1);
  }
  .hi-prev{
-     margin-left: 290px;
-     margin-top: 380px;
+     margin-left: 270px;
+     margin-top: 340px;
  }
  .hi-next{
-    margin-left: 340px;
-    margin-top: 380px;
+    margin-left: 320px;
+    margin-top: 340px;
 }
 .hi-prev:hover .fa-chevron-circle-left{
     opacity: .8;
@@ -903,10 +922,10 @@ nav a:nth-child(6):after{
     position:absolute; 
 }
 .game-text{
-     width: 402px;
-     height: 150px;
+     width: 410px;
+     height: 120px;
      font-weight: normal;
-     font-size: 14px;
+     font-size: 13px;
      line-height: 142.8%;
      color: #FFFFFF;
      margin-left: 17px;
@@ -920,10 +939,7 @@ nav a:nth-child(6):after{
     font-size: 12px;
     line-height: 15px;
     margin-left: 33px;
-}
-.caption .icon1{
-    margin-left: -20px;
-}
+}   
 .caption .language{
     width: 48px;
     height: 14px;
@@ -935,11 +951,11 @@ nav a:nth-child(6):after{
 }
 .caption .genre-menu1{
     margin-left: -30px;
-    line-height: 17px;
-    padding-left: 8px;
+    line-height: 19px;
+    padding-left: 15px;
 }
 .caption .genre-menu2{
-    line-height: 17px;
+    line-height: 19px;
     padding-left: 12px;
 }
 .caption h3{
@@ -960,7 +976,7 @@ nav a:nth-child(6):after{
     width: 133px;
     height: 23px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 157.8%;
     color: #FFFFFF;
     margin-bottom: 15px;
