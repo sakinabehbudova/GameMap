@@ -1,4 +1,19 @@
-  //The button scrool up to top
+//Sticky Navigation
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+//The button scrool up to top
 const backToTopButton = document.getElementById('back-to-top-btn');
 
 window.addEventListener('scroll', scrollFunction);
@@ -24,8 +39,6 @@ function scrollFunction() {
 
 backToTopButton.addEventListener("click", smoothScroll);
 function smoothScroll() {
-    event.preventDefault();
-    const targetId = event.currentTarget.getAttribute("href")==="#" ? "header" : event.currentTarget.getAttribute("href");
     const targetPoition = 0;
     const startPosition = window.pageYOffset;
     const distance = targetPoition - startPosition;
