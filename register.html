@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles.css">
 
@@ -63,30 +66,47 @@
                                     placeholder="Password">
                                 <label for="password" class="form-label">Password</label>
                             </div>
+
+
+                            <div class="dob">
+                                <label class="dob__field dob__field--month">
+                                    <input type="number" min="1" max="12" placeholder="DD">
+                                </label>
+                                <label class="dob__field dob__field--day">
+
+                                    <input type="number" min="1" max="31" placeholder="MM">
+                                </label>
+                                <label style="color:white;" class="dob__field dob__field--year">
+
+                                    <input type="number" min="1900" max="2010" placeholder="YY">
+                                </label>
+                            </div>
+
+
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                <input class="active form-check-input" type="checkbox" name="check1" id="check1"
                                     value="option1" checked>
-                                <label class="form-check-label" for="gridRadios1">
+                                <label class="form-check-label" for="check1">
                                     I accept the terms and conditions, cookie policy and privacy policy.
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                <input class="form-check-input" type="checkbox" name="check2" id="check2"
                                     value="option2">
-                                <label class="form-check-label" for="gridRadios2">
+                                <label class="form-check-label" for="check2">
                                     Send me vouchers and news on great promotions.
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                <input class="form-check-input" type="checkbox" name="check3" id="check3"
                                     value="option3">
-                                <label class="form-check-label" for="gridRadios3">
-                                    Send me the latest updates, competitions and news from the Community.
+                                <label class="form-check-label" for="check3">
+                                    Send me the latest updates, competitions and news from the .
                                 </label>
                             </div>
 
                             <div class="row d-flex justify-content-center">
-                                <a type="button" class="sign-in-btn btn btn-link">Sign in</a>
+                                <a href="login.html" type="button" class="sign-in-btn btn btn-link">Sign in</a>
                                 <a type="button" class="register-btn btn btn-link">Register</a>
                             </div>
                         </form>
