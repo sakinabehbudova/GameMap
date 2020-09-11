@@ -155,11 +155,10 @@ transform: translateX(-50%) scaleX(1);
     width: 100%;
     z-index: 100;
     height: 60px !important;
-    background-color: lightblue !important;
     transition: all 0.4s ease;
 }
 .sticky .logo2 a:after{
-    content: url(images/Group\ 35.svg);
+    content: url(images/gamelogo\ 2.png);
     display: flex;
     justify-content: flex-start !important;
     padding-top: 15px;
@@ -175,8 +174,6 @@ transform: translateX(-50%) scaleX(1);
     transition: all 0.4s ease;
 
 }
-
-
 
 /*Home*/
 #home{
@@ -1199,9 +1196,11 @@ transform: translateX(-50%) scaleX(1);
 .dob {
     display: flex;
     justify-content:space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
 }
-.dob input{
+.dob select{
     width: 112px;
     height: 44px;
     border-radius: 100px;
@@ -1209,13 +1208,16 @@ transform: translateX(-50%) scaleX(1);
     outline: none;
     font-size: 12px !important;
     font-weight: bold !important;
-    padding-left: 42px;
-}
-.dob input::placeholder{
-    font-size: 12px !important;
-    line-height: 116.8%;
-    font-weight: bold !important;
     color: #232323;
+    padding-left: 40px;
+    overflow: hidden;
 }
+.dob select option{
+    font-weight: bold !important;
+  font-size: 12px !important;
+
+}
+
+
 
 

@@ -25,7 +25,7 @@
     <div id="register-header">
         <div class="container">
             <div class="logo3">
-                <a href="">
+                <a href="index.html">
                     <img src="images/Group 35.svg">
                 </a>
             </div>
@@ -65,24 +65,18 @@
                                 <input class="form-control" type="password" id="password" name="password"
                                     placeholder="Password">
                                 <label for="password" class="form-label">Password</label>
-                            </div>
-
+                            </div>             
 
                             <div class="dob">
-                                <label class="dob__field dob__field--month">
-                                    <input type="number" min="1" max="12" placeholder="DD">
-                                </label>
-                                <label class="dob__field dob__field--day">
 
-                                    <input type="number" min="1" max="31" placeholder="MM">
-                                </label>
-                                <label style="color:white;" class="dob__field dob__field--year">
+                                <select id="day" name="dd"  onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress="this.size=0;" onclick="change_year(this)">
+                                </select>
+                                <select id="month" name="mm" onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress='this.size=0;'  onclick="change_month(this)" >
+                                </select>
+                                <select id="year" name="yyyy" onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress='this.size=0;' onclick="change_year(this)">
+                                </select>
 
-                                    <input type="number" min="1900" max="2010" placeholder="YY">
-                                </label>
                             </div>
-
-
                             <div class="form-check">
                                 <input class="active form-check-input" type="checkbox" name="check1" id="check1"
                                     value="option1" checked>
@@ -101,10 +95,9 @@
                                 <input class="form-check-input" type="checkbox" name="check3" id="check3"
                                     value="option3">
                                 <label class="form-check-label" for="check3">
-                                    Send me the latest updates, competitions and news from the .
+                                    Send me the latest updates, competitions and news from the Community.
                                 </label>
                             </div>
-
                             <div class="row d-flex justify-content-center">
                                 <a href="login.html" type="button" class="sign-in-btn btn btn-link">Sign in</a>
                                 <a type="button" class="register-btn btn btn-link">Register</a>
@@ -116,6 +109,7 @@
         </div>
     </div>
 
+   <script src="js/register.js"></script>
 
 </body>
 
