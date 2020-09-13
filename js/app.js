@@ -2,11 +2,14 @@
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
+var menu =document.getElementById("menu");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    
+    menu.classList.add("animate__slideInLeft");
   } else {
     navbar.classList.remove("sticky");
   }

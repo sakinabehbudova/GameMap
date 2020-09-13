@@ -167,12 +167,14 @@ transform: translateX(-50%) scaleX(1);
     padding-right: 0 ;
 }
 .sticky ul {
+   
     display: flex;
     justify-content: flex-end !important;
     padding-right: 0 !important;
     margin-top: -45px !important;
-    transition: all 0.4s ease;
-
+}
+.animate__animated {
+    --animate-duration: 2s;
 }
 
 /*Home*/
