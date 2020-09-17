@@ -15,6 +15,18 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+        </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/css/intlTelInput.css" rel="stylesheet"
+        media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"></script>
+
+
 
     <link rel="stylesheet" href="styles.css">
 
@@ -32,7 +44,6 @@
         </div>
     </div>
     <div id="register-content">
-        <img class="bg-image img-responsive d-block w-100" src="images/image 48.png">
         <div class="content">
             <div class="container">
                 <div class="row d-flex justify-content-center">
@@ -65,17 +76,12 @@
                                 <input class="form-control" type="password" id="password" name="password"
                                     placeholder="Password">
                                 <label for="password" class="form-label">Password</label>
-                            </div>             
-
-                            <div class="dob">
-
-                                <select id="day" name="dd"  onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress="this.size=0;" onclick="change_year(this)">
-                                </select>
-                                <select id="month" name="mm" onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress='this.size=0;'  onclick="change_month(this)" >
-                                </select>
-                                <select id="year" name="yyyy" onmousedown="if(this.options.length>8){this.size=3;}"  onkeypress='this.size=0;' onclick="change_year(this)">
-                                </select>
-
+                            </div>
+                            <div id=""></div>
+                            <div id="intlTelInput" class="form-group">
+                                <input  name="phone" id="phone" type="number"
+                                    placeholder="Phone number">
+                               
                             </div>
                             <div class="form-check">
                                 <input class="active form-check-input" type="checkbox" name="check1" id="check1"
@@ -109,7 +115,7 @@
         </div>
     </div>
 
-   <script src="js/register.js"></script>
+    <script src="js/intlTelInput.js"></script>
 
 </body>
 

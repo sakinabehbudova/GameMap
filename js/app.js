@@ -9,7 +9,7 @@ function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
     
-    menu.classList.add("animate__slideInLeft");
+    menu.classList.add("show");
   } else {
     navbar.classList.remove("sticky");
   }
