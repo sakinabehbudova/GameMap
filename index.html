@@ -26,7 +26,7 @@
 </head>
 
 <body class="index">
-    <div class="header">
+    <div id="header">
         <div class="container">
             <button id="back-to-top-btn">
                 <img src="images/Vector1.svg">
@@ -40,9 +40,23 @@
                 <div class="search-box col-6 text-center">
                     <input id="search" type="text" placeholder="Search Product..." aria-label="Search">
                 </div>
-                <div class="start-buttons col-3 justify-content-end">
+                <!-- <div class="start-buttons col-3 justify-content-end">
                     <a href="login.html" id="sign-in" type="button" class=" btn btn-link">Sign in</a>
                     <a href="register.html" id="register" type="button" class="btn btn-link">Register</a>
+                </div>-->
+                <div class="user col-3 ">
+                    <div class="basket">
+                        <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
+                            <div class="circle"></div>
+
+                            <div class="number">0</div>
+                        </a>
+                    </div>
+                    <p class="username"><a href="">Dadashova</a></p>
+                    <a href="">
+                        <div class="user-photo-bg"></div>
+                        <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -62,6 +76,57 @@
             </div>
         </div>
     </div>
+    <div id="mobile" class="mobile">
+        <nav>
+            <div class="container">
+                <input id="responsive-menu" type="checkbox">
+                <label for="responsive-menu">
+                    <img src="images/Group 35.svg" alt="">
+                    <span id="menu-icon"></span></label>
+                <div id="overlay"></div>
+                <div class="overlay-inner">
+                   
+                    <div class="user d-flex justify-content-start">
+                        <div class="basket">
+                            <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
+                                <div class="circle"></div>
+    
+                                <div class="number">0</div>
+                            </a>
+                        </div>
+                        <p class="username"><a href="">Dadashova</a></p>
+                        <a href="">
+                            <div class="user-photo-bg"></div>
+                            <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="start-buttons d-flex justify-content-start">
+                        <a href="login.html" id="sign-in" type="button" class=" btn btn-link">Sign in</a>
+                        <a href="register.html" id="register" type="button" class="btn btn-link">Register</a>
+                    </div>
+                    <ul id="mobile-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Specials</a></li>
+                        <li><a href="#">New Products</a></li>
+                        <li><a href="#">Discounted</a></li>
+                        <li><a href="#">Platforms</a></li>
+                    </ul>
+                <hr class="mobil-line">
+                
+             
+                    <a href="">
+                        <p><i class="fas fa-user-cog fa-lg"></i> Settings </p>
+                    </a>
+                    <a href="">
+                        <p><i class="fas fa-sign-out-alt fa-lg"></i> Sign out </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
     <div id="home">
         <div class="">
             <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -69,7 +134,7 @@
                     <div class="carousel-indicators">
                         <div class="row justify-content-start w-100">
                             <div class="col-md-4 picture pl-0">
-                                <img data-target="#homeCarousel" src="images/image 3.jpg" data-slide-to="0"
+                                <img data-target="#homeCarousel" src="images/image 52.png" data-slide-to="0"
                                     class="active image-fluid">
                                 <div class="text pl-0">
                                     <h4 class="h4 title1">Cyberpunk 2077
@@ -989,6 +1054,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+
 
 
     <script src="js/app.js"></script>

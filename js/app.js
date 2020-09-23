@@ -67,9 +67,6 @@ function easeInOutCubic(t, b, c, d) {
 };
 
 
-
-
-
-
+/*Mobile menu opener*/
 
 
