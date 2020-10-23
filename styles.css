@@ -18,8 +18,6 @@ body input {
     text-decoration: none;
 }
 .search-box,.search-box2{
-    position: absolute; 
-    margin: auto; 
     text-align: center !important;
     
 }
@@ -104,8 +102,7 @@ body input {
   justify-content: flex-end;
    display: flex;
 }
-.user .basket{
- 
+.user .basket{ 
   position: relative;
 }
 .basket img{
@@ -118,9 +115,8 @@ body input {
   border-radius: 18px;
   margin-top: 33px;
   z-index: 5;
-
   background-color: #ff4656;
- left: 15px ;
+  left: 15px ;
   bottom: 5px;
 }
 .basket{
@@ -188,7 +184,7 @@ body input {
 
 }
 #navbar{ 
-  height: 45px; 
+   height: 45px; 
    left: 0px;
    background: #FFFFFF;
    display: flex;
@@ -626,8 +622,7 @@ transform: translateX(-50%) scaleX(1);
 }*/
 
 .game-name{
-    max-width: 190px;
-    height: 35px;
+    height: auto;
     font-style: normal;
     font-weight: 700;
     font-size: 15px !important;
@@ -668,7 +663,7 @@ transform: translateX(-50%) scaleX(1);
     margin-top: -4px;
 }
 .sale{
-    width: 83px;
+    width: 65px;
     height: 44px;
     background: #FF4656;
     border-top-right-radius: 54px;
@@ -678,38 +673,38 @@ transform: translateX(-50%) scaleX(1);
    
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 42px; 
     margin-top: 11px !important;
-    margin-left: 18px;
+    margin-left: 12px;
 }
 .price{
     width: 70px;
     height: 21px;
-    margin-left: 1px;
+    margin-left: -7px;
 }
 .price p{
    font-style: normal;
    font-weight: bold;
-   font-size: 20px;
+   font-size: 19px;
    line-height: 24px;
    color: #FF4656;
    margin-top: 20px;
 }
 .old-price{
-   width: 70px;
+   width: 60px;
    height: 21px;
    margin-top: 20px;
-   margin-left: -5px;
+   margin-left: -12px;
 }
 .old-price s{
    font-weight: 500;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 22px;  
    color: #3E3E3E;   
 }
  .line2{
-   width: 256px;
+   width: 100%;
    height: 4px;
    background-color: #FF4656;
    margin-top: -0.8px;
@@ -1385,7 +1380,6 @@ input[type=number] {
     font-size: 13px;
     line-height: 16px;
     border: none;
-
   }
   
   .intl-tel-input .country-list.dropup {
@@ -1394,7 +1388,7 @@ input[type=number] {
 
   }
   
-  .intl-tel-input .country-list .flag-box {
+   .intl-tel-input .country-list .flag-box {
     display: inline-block;
     width: 20px;
   }
@@ -2978,7 +2972,7 @@ input[type=number] {
     color: #FFFFFF;
     text-decoration:none !important;
     background-color: #FF4656;
-    margin-top: 43px;
+    margin-top: 28px;
     -webkit-appearance: none;
 }
 #login-content .sign-in-btn, #login-content .register-btn{
@@ -3212,21 +3206,22 @@ input[type=number] {
 }
 #genre-menu{
   background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
-  width: 269px;
+  width: 100%;
   position: relative;
 }
 #price-menu{
   background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
-  width: 269px;
+  width: 100%;
   height: 115px;
   position: relative;
+  margin-top: -18px;
   padding-top: 32px;
 
 }
 .btn-secondary.dropdown-toggle{
   background-color: #292929 !important;
   border: none;
-  width: 269px;
+  width: 255px;
   height: 50px;
   font-weight: 600;
   font-size: 14px;
@@ -3256,7 +3251,7 @@ input[type=number] {
 }
 #genre-menu {
   padding-top: 30px;
-  margin-top: -10px;
+  margin-top: -18px;
   margin-bottom: 21px;
 }
 .searchAllProducts{
@@ -3300,25 +3295,16 @@ margin-top: 13px;
   color: #fff;
 }
 .line8{
-  width: 245px;
+  width: 100%;
   height: 4px;
   background-color: #FF4656;
   margin-top: -0.8px;
 } 
 
-.noUi-horizontal {
-  height: 4px;
-width: 221px;}
-
 .slider-labels {
 margin-top: 10px;
-width:250px;
 }
 
-/* Functional styling;
-* These styles are required for noUiSlider to function.
-* You don't need to change these rules to apply your design.
-*/
 .noUi-target,.noUi-target * {
 -webkit-touch-callout: none;
 -webkit-user-select: none;
@@ -3337,7 +3323,7 @@ direction: ltr;
 }
 
 .noUi-base {
-width:221px;
+width:210px !important;
 height: 100%;
 position: relative;
 z-index: 1;
@@ -3382,23 +3368,27 @@ transform: translate3d(0,0,0);
 
 /* Slider size and handle placement;
 */
+#slider-range{
+  margin-left: 24px;
+}
 .noUi-horizontal {
-height: 4px;
+  width: 210px;
+  height: 4px;
 }
 
 .noUi-horizontal .noUi-handle {
-width: 18px;
-height: 18px;
+width: 15px;
+height: 15px;
 border-radius: 50%;
 left: -7px;
-top: -7px;
+top: -6px;
 background-color: #ff4656;
 }
 
 /* Styling;
 */
 .noUi-background {
-  margin-left: 24px;
+/*  margin-left: 24px;*/
 background: #393939;
 }
 
@@ -3454,8 +3444,71 @@ cursor: not-allowed;
 }
 #allProducts .caption{
   position: absolute;
-  width: 200px;
+  width: 138px;
   color: #FFF;
   margin-top: 30px;
-  margin-left: 40px;
+  margin-left: 80px;
+}
+#allProducts p button{
+  background-color: #292929;
+  border: none;
+  height: 50px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-left: 20px;
+}
+#allProducts p {
+  position: relative;
+}
+.rowOfProducts{
+  margin-left: 15px !important;
+  margin-top: 24px;
+}
+#allProducts p button:after{
+  content: url('images/Polygon\ 2.png');
+  position: absolute;
+  top: 20px;
+  right: 20px !important;
+  transform: rotate(180deg);
+}
+#allProducts  .collapse-inner:after{
+
+  transform: rotate(360deg);
+}
+ .pagination{
+  justify-content: center !important;
+  margin-top: 130px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 0;
+    
+}
+.pagination a{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 128.8%;
+  text-align: center;
+  letter-spacing: 0.11em;
+  color: #3e3e3e;
+  background-color: #232323;
+  text-decoration: none;
+  border: none;
+}
+.pagination a:hover {
+  background-color: #232323 !important;
+  color: #3e3e3e;
+}
+.pagination a .active{
+  color: white;
+}
+.pagination>li:first-child>a, .pagination>li:last-child>a{
+  background: url("");
+background-size: 100% 100%;
+height: 34px;
+width: 34px;
 }
