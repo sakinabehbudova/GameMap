@@ -73,74 +73,44 @@
             </div>
         </div>
     </div>
-    <div id="mobile" class="mobile">
-        <nav>
-            <div class="container">
-                <input id="responsive-menu" type="checkbox">
-                <label for="responsive-menu">
-                    <img src="images/Group 35.svg" alt="">
-                    <span id="menu-icon"></span></label>
-                <div id="overlay"></div>
-                <div class="overlay-inner">
 
-                    <div class="user d-flex justify-content-start">
-                        <div class="basket">
-                            <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
-                                <div class="circle"></div>
-
-                                <div class="number">0</div>
-                            </a>
-                        </div>
-                        <p class="username"><a href="">Behbudova</a></p>
-                        <a href="">
-                            <div class="user-photo-bg"></div>
-                            <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="start-buttons d-flex justify-content-start">
-                        <a href="login.html" id="sign-in-mobile" type="button" class=" btn btn-link">Sign in</a>
-                        <a href="register.html" id="register-mobile" type="button" class="btn btn-link">Register</a>
-                    </div>
-                    <ul id="mobile-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">Specials</a></li>
-                        <li><a href="#">New Products</a></li>
-                        <li><a href="#">Discounted</a></li>
-                        <li><a href="#">Platforms</a></li>
-                    </ul>
-                    <hr class="mobile-line">
-                    <div class="search-box">
-                        <input class="search" id="mobile-search" type="text" placeholder="Search Product..."
-                            aria-label="Search">
-                    </div>
-                    <div class="settings">
-                        <a href="">
-                            <p><i class="fas fa-user-cog fa-lg"></i> Settings </p>
-                        </a>
-                        <a href="">
-                            <p><i class="fas fa-sign-out-alt fa-lg"></i> Sign out </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
     <div id="contactUs">
         <div class="container">
             <h3>CONTACT US</h3>
             <hr class="line9 ml-0">
             <div class="row">
-                <div class="col-md-5">
-                    <input class="" type="text" placeholder="Name, Surname">
-                    <input type="text" placeholder="E-mail">
-                    <input type="number" placeholder="Phone">
-                    <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
-                    <div class="justify-content-end d-flex">
-                        <a href="" type="button" id="send-btn" class="btn btn-link">Send</a>
-                    </div>
+                <div class="col-md-5 order-2 order-md-1">
+                    <form id="form" class="form">
+                        <div class="formControl">
+                            <input type="text" placeholder="Name ,Surname" id="username1" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="formControl">
+                            <input type="email" placeholder="E-mail" id="email1" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="formControl">
+                            <input type="number" placeholder="Phone" id="phone1" />
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="formControl">
+                            <input type="text" placeholder="Message" id="message">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7 order-1 order-md-2">
                     <div class="justify-content-end d-flex">
                         <div class="white-circle">
                             <span>!</span>
@@ -211,7 +181,7 @@
 
 
 
-
+    <script src="js/validation.js"></script>
 
 
 </body>

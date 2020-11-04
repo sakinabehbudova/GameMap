@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GameMap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="index">
+    <div id="header">
+        <div class="container">
+            
+            <div class="row d-flex">
+                <div class="logo col-3">
+                    <a href="index.html">
+                        <img src="images/Group 35.svg">
+                    </a>
+                </div>
+                <div class="search-box col-6 text-center">
+                    <input class="search" id="search" type="text" placeholder="Search Product..." aria-label="Search">
+                </div>
+        <!--        <div class="start-buttons col-3 justify-content-end">
+                    <a href="login.html" id="sign-in" type="button" class=" btn btn-link">Sign in</a>
+                    <a href="register.html" id="register" type="button" class="btn btn-link">Register</a>
+                </div> -->
+                   <div class="user col-3 ">
+                    <div class="basket">
+                        <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
+                            <div class="circle"></div>
+
+                            <div class="number">0</div>
+                        </a>
+                    </div>
+                    <p class="username"><a href="">Dadashova</a></p>
+                    <a href="">
+                        <div class="user-photo-bg"></div>
+                        <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="container">
+            <div class="">
+                <div class="logo2"><a href=""></a></div>
+                <ul id="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="allProducts.html">ALL PRODUCTS</a></li>
+                    <li><a href="specials.html">SPECIALS</a></li>
+                    <li><a href="newProducts.html">NEW PRODUCTS</a></li>
+                    <li><a href="#">DISCOUNTED</a></li>
+                    <li><a href="#">PLATFORMS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--New Products-->
+    <div id="newProducts">
+        <div id="carousel">
+            <div class="container-fluid px-0">
+                <div id="secondCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="0" class="active"></li>
+                        <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="1"></li>
+                        <li class="carousel-indicator" data-target="#secondCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 img-responsive image3" src="images/Rectangle 109.png"
+                                alt="First slide">
+                            <img src="images/image 50.png" class="img-responsive image4">
+                            <div class="carousel-caption d-block">
+                                <div class="container pl-0">
+                                    <div class="row">
+                                        <h2 class="">Destroy All Humans!
+                                        </h2>
+                                    </div>
+                                    <div class="row">
+                                        <h5 class="date">October 10, 2020</h5>
+                                    </div>
+                                    <div class="vertical row">
+                                    </div>
+                                    <div class="row">
+                                        <p>PLATFORMS</p>
+                                        <img class="icon1" src="images/image 18 (Traced).svg">
+                                        <img class="icon2" src="images/image 19 (Traced).svg">
+                                        <img class="icon3" src="images/image 42 (Traced).svg">
+                                    </div>
+                                    <div class="row genre">
+                                        <p>GENRE</p>
+                                        <div class="genre-menu1">Action </div>
+                                        <div class="genre-menu2">Strategy</div>
+                                        <div class="genre-menu3">Strategy</div>
+                                    </div>
+                                    <div class="row">
+                                        <h3>29.90 &#x20bc;</h3>
+                                        <button class="buy btn-link">BUY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-responsive image3" src="images/Rectangle 110.png"
+                                alt="Second slide">
+                            <img src="images/PUBG-Character-PNG-Transparent-Picture 1.png" class="img-responsive image5">
+                            <div class="carousel-caption d-block">
+                                <div class="container pl-0">
+                                    <div class="row">
+                                        <h2 class="">Destroy All Humans!
+                                        </h2>
+                                    </div>
+                                    <div class="row">
+                                        <h5 class="date">October 10, 2020</h5>
+                                    </div>
+                                    <div class="vertical row">
+                                    </div>
+                                    <div class="row">
+                                        <p>PLATFORMS</p>
+                                        <img class="icon1" src="images/image 18 (Traced).svg">
+                                        <img class="icon2" src="images/image 19 (Traced).svg">
+                                        <img class="icon3" src="images/image 42 (Traced).svg">
+                                    </div>
+                                    <div class="row genre">
+                                        <p>GENRE</p>
+                                        <div class="genre-menu1">Action </div>
+                                        <div class="genre-menu2">Strategy</div>
+                                        <div class="genre-menu3">Strategy</div>
+                                    </div>
+                                    <div class="row">
+                                        <h3>29.90 &#x20bc;</h3>
+                                        <button class="buy btn-link">BUY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="carousel-item">
+                            <img class="d-block w-100 img-responsive image3" src="images/Rectangle 122.png"
+                                alt="Third slide">
+                            <img src="images/dd94nor-bc6621a5-69b7-49b8-af0f-12b1cb1879be 1.png"
+                                class="img-responsive image6">
+                            <div class="carousel-caption d-block">
+                                <div class="container pl-0">
+                                    <div class="row">
+                                        <h2 class="">Destroy All Humans!
+                                        </h2>
+                                    </div>
+                                    <div class="row">
+                                        <h5 class="date">October 10, 2020</h5>
+                                    </div>
+                                    <div class="vertical row">
+                                    </div>
+                                    <div class="row">
+                                        <p>PLATFORMS</p>
+                                        <img class="icon1" src="images/image 18 (Traced).svg">
+                                        <img class="icon2" src="images/image 19 (Traced).svg">
+                                        <img class="icon3" src="images/image 42 (Traced).svg">
+                                    </div>
+                                    <div class="row genre">
+                                        <p>GENRE</p>
+                                        <div class="genre-menu1">Action </div>
+                                        <div class="genre-menu2">Strategy</div>
+                                        <div class="genre-menu3">Strategy</div>
+                                    </div>
+                                    <div class="row">
+                                        <h3>29.90 &#x20bc;</h3>
+                                        <button class="buy btn-link">BUY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="new">
+            <div class="container">
+                <h3>NEW PRODUCTS</h3>
+                <hr class="line3 ml-0">
+                <div class="row">
+                   
+                      
+                
+                   
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 85.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 86.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 87.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href="">
+                                            Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 88.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 85.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 86.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 87.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href="">
+                                            Star Wars Squadrons PC Origin Key
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="game">
+                            <a href="">
+                                <img class="new-game-image" src="images/Rectangle 88.png">
+                            </a>
+                            <div class="row">
+                                <div class="col-9">
+                                    <p class="game-name"><a href=""> Star Wars Squadrons PC Origin Key
+                                    </p>
+                                    </a>
+                                </div>
+                                <div class="col-3 justify-content-end">
+                                    <button class="btn btn-primary"><img class="vector" src="images/Vector.svg"></button>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="date">October 10, 2020</p>
+                            </div>
+    
+                            <div class="price-new">
+                                <p>15.50&#x20bc;</p>
+                            </div>
+                        </div>
+                        <hr class="line2">
+                    </div>
+                   
+                </div>
+                <nav class="d-flex justify-content-center" aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="active page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+   
+   
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-text1">
+                            <p><a href="">About us </a></p>
+                            <p><a href="">Business partnership</a></p>
+                            <p><a href="">Protection of Personal Data</a></p>
+                            <p><a href="">Notice Agreement</a></p>
+                            <p><a href="">Cookie Policy</a></p>
+                            <p><a href="contactUs.html">Contact us</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-text2">
+                            <p><a href="register.html">Register</a></p>
+                            <p><a href="login.html">Login</a></p>
+                            <p><a href="">My Profile</a></p>
+                            <p><a href="">I forgot my password</a></p>
+                            <p><a href="">Sitemap</a></p>
+                            <p><a href="faq.html">FAQ</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="social-icons">
+                            <div class="row">
+                                <h6> Follow Us</h6>
+                            </div>
+
+                            <div class="row">
+                                <a href="" class="social-icon"><img class="icon-image1" src="images/Vector 2.svg"
+                                        alt=""></i>
+                                </a>
+                                <a href="" class="social-icon"><img class="icon-image2" src="images/Vector 3.svg"
+                                        alt="">
+                                </a>
+                                <a href="" class="social-icon"><img class="icon-image3" src="images/vector4.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="contact">
+                            <h6>Contact Us</h6>
+                            <p></p><a class="phoneNumber" href=""> +1 003 100 002 123</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
