@@ -3190,8 +3190,8 @@ input[type=number] {
   padding-top: 82px;
   padding-bottom: 100px;
 }
-#allProducts h3,#contactUs h3,#faq h3,#specialsPage{
-  font-weight: bold;
+#allProducts h3,#contactUs h3,#faq h3,#specialsPage h3,#accountSettings h3{
+  font-weight: 700 !important;
   font-size: 25px;
   line-height: 128.8%;
   color: #FFFFFF;
@@ -3572,9 +3572,12 @@ margin-right: 80px;
   display: block;
   font-family: inherit;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.1);
   width: 100%;
+}
+#contactUs .formControl input{
+  background: rgba(255, 255, 255, 0.1) !important;
   color: #FFF;
+
 }
 .formControl input {
   height: 50px;
@@ -3586,7 +3589,7 @@ margin-right: 80px;
   padding-bottom: 145px;
   font-weight: 500;
 }
-.formControl ::-webkit-input-placeholder {
+#contactUs .formControl ::-webkit-input-placeholder {
   color: #FFF;
 }
 .formControl input:focus {
@@ -3649,7 +3652,7 @@ textarea.ta10em{
   color: #fff;
   padding-left: 50px;
 }
-#send-btn{
+#send-btn,#save-btn{
   width: 120px;
   height: 45px;
   border-radius: 54px;
@@ -3802,7 +3805,167 @@ bottom: 0;
 }
 #newProducts .price-new{
   color: #FFF;
-}
+} 
 #newProducts .line2{
   margin-bottom: 40px;
+}
+/*Accaunt Setings*/
+#accountSettings{
+  background-image: url('images/GndzcqPmWF9HbnuoIOeIdA\ 1.png');
+  background-color: #232323;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  margin-bottom: -25px;
+
+}
+#accountSettings h3{
+padding-top: 82px;
+}
+#exTab1{
+  margin-top: 40px;
+}
+#accountSettings #exTab1 .tab-content {
+  color : white;
+  width: 100%;
+  padding : 5px 15px;
+}
+
+#exTab1 .nav-tabs > li > a {
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3) ;
+  padding-left: 70px;
+}
+.nav-tabs .nav-item{
+  width: 20%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+  height: 60px;
+  background-color: #232323;
+  outline: none !important;
+  border: none !important;
+  margin-bottom: -5px;
+  padding-left: 20px;
+}
+.nav-tabs .nav-item:focus{
+  outline: none !important;
+  border: none !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #292929 !important;
+  border: none;
+  outline: none;
+  color: #fff !important;
+ }
+#exTab1 .tab-pane{  
+  width: 100% !important;
+  background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
+  position: relative;
+}
+
+.account-photo{
+  padding-top: 72px;
+  margin-bottom: 52px;
+}
+.pink{
+  border: 1px solid #ff5456;
+  height: 177px;
+  width: 177px;
+  border-radius: 50%;
+}
+.pink-circle{
+  height: 168px;
+  width: 168px;
+  background-color: #ff5456;
+  border-radius: 50%;
+  margin-top: 3.8px;
+  margin-left: 3.5px;
+  position: relative;
+}
+.user-icon{
+  position: absolute;
+  margin-left: 45px;
+  margin-top: 45px;
+}
+.gamer,.gamer-id{
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+}
+.gamer{
+  font-weight: 600; 
+}
+.gamer-id{
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.3);
+}
+#save-btn{
+  margin-top: 30px;
+}
+#save-btn:hover{
+  /*color: #ff4654;
+  background-color: #fff;*/
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+#accountSettings input{
+  font-weight: 500;
+}
+#accountSettings input::placeholder{
+  color: #232323;
+  font-weight: 500;
+  font-size: 14px;
+}
+.account{
+  padding-bottom: 250px !important;
+}
+.payment{
+  padding-left: 80px;
+  padding-bottom: 200px;
+}
+.payment h5{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  padding-top: 45px;
+}
+#accountSettings .fa-plus{
+  color:white;
+  width: 50px;
+  height: 50px;
+  border-radius: 54px !important;
+  background-color:rgba(255, 255, 255, 0.1);
+  line-height: 50px;
+  text-align: center;
+  margin-right: 20px;
+  top: 20px;
+}
+.addMethod i{
+  margin-top: 25px;
+}
+.addMethod{
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 58px;
+  color: #FFF;
+}
+.addMethod:hover{
+  color: #888;
+}
+.balans,.shop{
+  height: 500px;
 }

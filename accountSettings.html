@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GameMap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="">
+    <div id="header">
+        <div class="container">
+
+            <div class="row d-flex">
+                <div class="logo col-3">
+                    <a href="index.html">
+                        <img src="images/Group 35.svg">
+                    </a>
+                </div>
+                <div class="search-box col-6 text-center">
+                    <input class="search" id="search" type="text" placeholder="Search Product..." aria-label="Search">
+                </div>
+                <!--        <div class="start-buttons col-3 justify-content-end">
+                    <a href="login.html" id="sign-in" type="button" class=" btn btn-link">Sign in</a>
+                    <a href="register.html" id="register" type="button" class="btn btn-link">Register</a>
+                </div> -->
+                <div class="user col-3 ">
+                    <div class="basket">
+                        <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
+                            <div class="circle"></div>
+
+                            <div class="number">0</div>
+                        </a>
+                    </div>
+                    <p class="username"><a href="">Dadashova</a></p>
+                    <a href="">
+                        <div class="user-photo-bg"></div>
+                        <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="container">
+            <div class="">
+                <div class="logo2"><a href=""></a></div>
+                <ul id="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="allProducts.html">ALL PRODUCTS</a></li>
+                    <li><a href="specials.html">SPECIALS</a></li>
+                    <li><a href="newProducts.html">NEW PRODUCTS</a></li>
+                    <li><a href="#">DISCOUNTED</a></li>
+                    <li><a href="#">PLATFORMS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="accountSettings">
+        <div class="container">
+            <h3>ACCOUNT SETTINGS</h3>
+            <hr class="line5 ml-0">
+
+            <div id="exTab1" class="">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item active">
+                        <a class="active nav-link" href="#1a" data-toggle="tab">Account </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#2a" data-toggle="tab">Orders</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#3a" data-toggle="tab">Payment </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#4a" data-toggle="tab">Balans</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#5a" data-toggle="tab">Shop</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content clearfix p-0">
+                    <div class="tab-pane active" id="1a">
+                        <div class="">
+                            <div class="account-photo d-flex justify-content-center">
+                                <div class="pink">
+                                    <div class="pink-circle">
+                                        <img class="user-icon" src="images/Icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-6 offset-3">
+                                        <div class="row pl-0">
+                                            <div class="col-6">
+                                                <div class="gamer">Gamer1303</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="gamer-id">ID: 15485A</div>
+                                            </div>
+                                        </div>
+                                        <form id="form" class="form">
+                                            <div class="formControl">
+                                                <input type="text" placeholder="Name ,Surname" id="username1" />
+                                                <i class="fas fa-check-circle"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+                                                <small>Error message</small>
+                                            </div>
+                                            <div class="formControl">
+                                                <input type="email" placeholder="E-mail" id="email1" />
+                                                <i class="fas fa-check-circle"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+                                                <small>Error message</small>
+                                            </div>
+                                            <div class="formControl">
+                                                <input type="password" placeholder="Password" id="password1" />
+                                                <i class="fas fa-check-circle"></i>
+                                                <i class="fas fa-exclamation-circle"></i>
+                                                <small>Error message</small>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button id="save-btn">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane orders" id="2a">
+                    </div>
+                    <div class="tab-pane payment" id="3a">
+                        <h5>CREDIT CARD</h5>
+                        <div> <a class="addMethod" href=""><i class="fas fa-plus fa-2x"></i> Add payment method</a>
+                        </div>
+                        <div> <a class="addMethod" href=""><i class="fas fa-plus fa-2x"></i> Add payment method</a>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane balans" id="4a">
+
+                    </div>
+                    <div class="tab-pane shop" id="5a">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-text1">
+                            <p><a href="">About us </a></p>
+                            <p><a href="">Business partnership</a></p>
+                            <p><a href="">Protection of Personal Data</a></p>
+                            <p><a href="">Notice Agreement</a></p>
+                            <p><a href="">Cookie Policy</a></p>
+                            <p><a href="contactUs.html">Contact us</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-text2">
+                            <p><a href="register.html">Register</a></p>
+                            <p><a href="login.html">Login</a></p>
+                            <p><a href="">My Profile</a></p>
+                            <p><a href="">I forgot my password</a></p>
+                            <p><a href="">Sitemap</a></p>
+                            <p><a href="faq.html">FAQ</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="social-icons">
+                            <div class="row">
+                                <h6> Follow Us</h6>
+                            </div>
+
+                            <div class="row">
+                                <a href="" class="social-icon"><img class="icon-image1" src="images/Vector 2.svg"
+                                        alt=""></i>
+                                </a>
+                                <a href="" class="social-icon"><img class="icon-image2" src="images/Vector 3.svg"
+                                        alt="">
+                                </a>
+                                <a href="" class="social-icon"><img class="icon-image3" src="images/vector4.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="contact">
+                            <h6>Contact Us</h6>
+                            <p></p><a class="phoneNumber" href=""> +1 003 100 002 123</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('username1');
+        const email = document.getElementById('email1');
+        const password = document.getElementById('password1');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            checkInputs();
+        });
+
+        function checkInputs() {
+            // trim to remove the whitespaces
+            const usernameValue = username.value.trim();
+            const emailValue = email.value.trim();
+            const passwordValue = password.value.trim();
+
+            if (usernameValue === '') {
+                setErrorFor(username, 'Username cannot be blank');
+            } else {
+                setSuccessFor(username);
+            }
+
+            if (emailValue === '') {
+                setErrorFor(email, 'Email cannot be blank');
+            } else if (!isEmail(emailValue)) {
+                setErrorFor(email, 'Not a valid email');
+            } else {
+                setSuccessFor(email);
+            }
+
+            if (passwordValue === '') {
+                setErrorFor(password, 'Password cannot be blank');
+            } else {
+                setSuccessFor(password);
+            }
+        }
+
+        function setErrorFor(input, message) {
+            const formControl = input.parentElement;
+            const small = formControl.querySelector('small');
+            formControl.className = 'formControl error';
+            small.innerText = message;
+        }
+
+        function setSuccessFor(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'formControl success';
+        }
+
+        function isEmail(email) {
+            return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        }
+    </script>
+</body>
+
+</html>
