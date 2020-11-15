@@ -3930,6 +3930,97 @@ padding-top: 82px;
 .account{
   padding-bottom: 250px !important;
 }
+#orders-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+#orders-table td, #orders-table th {
+  border: none;
+  padding: 15px;
+}
+/*tr:nth-child(odd)  {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.058) 47.73%, rgba(255, 255, 255, 0) 98.55%);
+}*/
+ #accountSettings table th {
+  padding-top: 40px !important;
+  padding-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+.game-image1{
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 75px;
+}
+.game-name1{
+  width: 171px;
+  margin-left: 13px;
+  padding-top: 19px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 116.8%;
+  color: #FFFFFF;
+}
+.orderNumber{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+.quantity{
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18.3333px;
+}
+.quantity-number{
+  font-weight: bold;
+  font-size: 13.3333px;
+  line-height: 35px;
+  align-items: center !important;
+  text-align: center;
+  color: #FFFFFF;
+}
+.total{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.showDetailsButton,.closeDetailsButton{
+  width: 145px;
+  height: 37px;
+  border-radius: 54px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  border: none;
+  outline: none !important;
+}
+.showDetailsButton{
+  background: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+}
+.closeDetailsButton{
+  color: #232323;
+}
+.showDetailsButton:hover{
+  background: #ff4654;
+  transition: .3s ease-in-out;
+}
+.closeDetailsButton:hover{
+  opacity: .8;
+  transition: .3s ease-in-out;
+}
+
 .payment{
   padding-left: 80px;
   padding-bottom: 200px;
