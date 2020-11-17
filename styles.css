@@ -765,16 +765,16 @@ transform: translateX(-50%) scaleX(1);
     padding-bottom: 226px;
     background-color:#232323;
 }
-#new h3{
-    margin-top: 114px;
-    margin-bottom: -5px;
+#new h3,#newProducts2 h3{
+    margin-top: 100px;
+   
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 128.8%;
     color: #FFFFFF;
 }
-#new .line3{
+.line3{
     height: 4px; 
     background-color: #FF4656;
     width: 52px; 
@@ -1128,7 +1128,7 @@ transform: translateX(-50%) scaleX(1);
     background-color: #232323;
     background-size: cover;
     background-repeat: no-repeat;    
-   height: 90vh;
+    height: 90vh;
 }
 
 .content{
@@ -3930,6 +3930,9 @@ padding-top: 82px;
 .account{
   padding-bottom: 250px !important;
 }
+.orders{
+  padding-bottom: 200px;
+}
 #orders-table {
   border-collapse: collapse;
   width: 100%;
@@ -3938,9 +3941,45 @@ padding-top: 82px;
   border: none;
   padding: 15px;
 }
-/*tr:nth-child(odd)  {
+tbody tr:nth-child(4n)  {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.058) 47.73%, rgba(255, 255, 255, 0) 98.55%);
-}*/
+}
+ .hiddenRow{
+  padding-left: 35px !important;
+  padding-top: 20px;
+}
+.hiddenRow h6{
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.hiddenRow .aboutOrder{
+  width: 88%;
+  height: auto;
+  padding-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 142.8%;
+  color: rgba(255, 255, 255, 0.3);
+}
+.hiddenRow .paymentMethode{
+  line-height: 35px;
+  padding-top: -10px;
+  padding-left: 40px;
+}
+.paymentMethode h6{
+  margin-left: -12px;
+}
+.hiddenRow .aboutPayment1{
+  font-weight: normal;
+  font-size: 14px;
+  color: #6F6F6F;
+}
+.hiddenRow .aboutPayment2{
+  margin-left: 15px;
+}
+
  #accountSettings table th {
   padding-top: 40px !important;
   padding-bottom: 20px;
@@ -3954,8 +3993,8 @@ padding-top: 82px;
 .game-image1{
   width: 50px;
   height: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   margin-left: 75px;
 }
 .game-name1{
@@ -3994,7 +4033,11 @@ padding-top: 82px;
   line-height: 17px;
   color: #FFFFFF;
 }
-.showDetailsButton,.closeDetailsButton{
+.showDetailsButton.collapsed{
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #FFF;
+}
+.showDetailsButton{
   width: 145px;
   height: 37px;
   border-radius: 54px;
@@ -4004,23 +4047,15 @@ padding-top: 82px;
   text-align: center;
   border: none;
   outline: none !important;
-}
-.showDetailsButton{
-  background: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
-}
-.closeDetailsButton{
+  background-color: #fff;
   color: #232323;
 }
-.showDetailsButton:hover{
+
+/*.showDetailsButton:hover{
   background: #ff4654;
   transition: .3s ease-in-out;
 }
-.closeDetailsButton:hover{
-  opacity: .8;
-  transition: .3s ease-in-out;
-}
-
+*/
 .payment{
   padding-left: 80px;
   padding-bottom: 200px;
@@ -4059,4 +4094,179 @@ padding-top: 82px;
 }
 .balans,.shop{
   height: 500px;
+}
+/*product2 page*/
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  height: auto;
+}
+#product2{
+  background-color: #232323;
+  background-image: url(images/image\ 1.png);
+  padding-top: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;  
+  
+}
+#product2 ul li:nth-child(2n){
+  background: linear-gradient(90deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.927083) 46.94%, rgba(35, 35, 35, 0) 96.91%);
+  
+}
+#product2 ul li{
+  list-style: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+#product2 .game-image3{
+  width: 100px;
+  height: 137px;
+  margin-right: 15px !important;
+}
+.product2 .gameDetails{
+  margin-left: 15px !important;
+}
+#product2 h5{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 122.3%;
+  color: white;
+}
+#product2 h6{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 122.3%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 17px;
+  margin-right: 7px;
+}
+#product2 .uc{
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -10px;
+  color: #FF4656;
+  line-height: 30px;
+  margin-bottom: 3px;
+}
+#product2 .country{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 9px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.stepper {
+  border: none;
+  display: inline-block;
+  overflow: visible;
+  height: 2.3em;
+  padding: 1px;
+  border-radius: 20px;
+  margin-top: 21px;
+  margin-left: 45px;
+}
+#stepper{
+  width: 2.7em !important;
+}
+
+.stepper input {
+  width: 2.3em;
+  height: 100%;
+  text-align: center;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 40px;
+  background-color: white;
+  outline: none;
+}
+
+.stepper button {
+  width: 1.4em;
+  font-weight: 500;
+  height: 62%;
+  line-height: 0.1em;
+  font-size: 15px;
+  padding: 0.2em !important;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  outline: none !important;
+  border-radius: 50%;
+}
+.addBtn{
+  width: 120px;
+  height: 35px;
+  outline: none !important;
+  border: none;
+  -webkit-appearance: none;
+  background-color: #ff4656;
+  font-weight: bold;
+  font-size: 13px;
+  color: white;
+  border-radius: 54px;
+  line-height: 10px;
+  margin-top: 22px !important;
+  margin-left: 25px;
+}
+#product2 .sale{
+ margin-left: 16px;
+  margin-top: 12px;
+}
+#product2 .sale p{
+  color: #fff;
+}
+#product2 .price {
+  margin-left: 20px;
+}
+#product2 .price p{
+ line-height: 37px;
+}
+#product2 .old-price  s{
+  line-height: 38px;
+  margin-left: 18px;
+}
+#product2 .price1{
+  font-weight: bold;
+  font-size: 21.2325px;
+  color: #FFFFFF;
+  margin-bottom: -25px;
+}
+#product2 .price1 p{
+ padding-top: 25px;
+  margin-left: 17px;
+}
+#product2 .game-image4{
+  width: 100%;
+  
+  object-fit: cover;
+}
+#product2 h2{
+  font-weight: bold;
+font-size: 32px;
+color: #fff;
+margin-top: 30px;
+}
+#product2 h4{
+  font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+
+color: #FF4656;
+}
+#product2 .text3{
+  font-weight: normal;
+font-size: 14px;
+line-height: 142.8%;
+color: #fff;
+}
+#newProducts2{
+  background: #292929;
+  padding-top: -70px;
+  padding-bottom: 150px;
+}
+#newProducts2 .price-new{
+  color: #fff;
 }
