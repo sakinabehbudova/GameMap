@@ -393,7 +393,7 @@ transform: translateX(-50%) scaleX(1);
     margin-bottom: 20px;
 }
 .carousel-caption .vertical{
-    border-left:  2px solid #FF4656;; 
+    border-left:  2px solid #FF4656;
     height: 47px; 
     position:absolute;        
 }
@@ -430,6 +430,7 @@ transform: translateX(-50%) scaleX(1);
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     font-size: 11px;
+    text-align: center;
 }
  .genre-menu1{
     margin-right: 16.08px;
@@ -701,7 +702,7 @@ transform: translateX(-50%) scaleX(1);
 .old-price s{
    font-weight: 500;
    font-size: 16px;
-   line-height: 42px;  
+   line-height: 22px;  
    color: #3E3E3E;   
 }
  .line2{
@@ -1073,11 +1074,11 @@ transform: translateX(-50%) scaleX(1);
 .caption .genre-menu1{
     margin-left: -30px;
     line-height: 19px;
-    padding-left: 15px;
+    text-align: center;
 }
 .caption .genre-menu2{
     line-height: 19px;
-    padding-left: 12px;
+   text-align: center;
 }
 .caption h3{
     width: 99px;
@@ -3829,36 +3830,38 @@ padding-top: 82px;
   width: 100%;
   padding : 5px 15px;
 }
-
-#exTab1 .nav-tabs > li > a {
+.nav-tabs{
+  border-bottom: none !important;
+}
+#exTab1 .nav-tabs > li > a ,
+#exTab2 .nav-tabs > li > a
+{
   border-radius: 0;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  line-height: 20px;
-  display: flex;
+  line-height: 38px;
   align-items: center;
   text-align: center !important;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3) ;
-  padding-left: 70px;
 }
-.nav-tabs .nav-item{
+#exTab1 .nav-tabs .nav-item{
   width: 20%;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+#exTab1 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
   height: 60px;
-  background-color: #232323;
+  background-color: #232323 !important;
   outline: none !important;
   border: none !important;
   margin-bottom: -5px;
   padding-left: 20px;
 }
-.nav-tabs .nav-item:focus{
+#exTab1 .nav-tabs .nav-item:focus{
   outline: none !important;
   border: none !important;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+#exTab1 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   background-color: #292929 !important;
   border: none;
   outline: none;
@@ -3869,7 +3872,6 @@ padding-top: 82px;
   background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
   position: relative;
 }
-
 .account-photo{
   padding-top: 72px;
   margin-bottom: 52px;
@@ -4101,7 +4103,7 @@ tbody tr:nth-child(4n)  {
   -webkit-appearance: none;
   height: auto;
 }
-#product2{
+#product2,#productPage{
   background-color: #232323;
   background-image: url(images/image\ 1.png);
   padding-top: 100px;
@@ -4238,29 +4240,27 @@ tbody tr:nth-child(4n)  {
  padding-top: 25px;
   margin-left: 17px;
 }
-#product2 .game-image4{
+ .game-image4{
   width: 100%;
-  
   object-fit: cover;
 }
 #product2 h2{
   font-weight: bold;
-font-size: 32px;
-color: #fff;
-margin-top: 30px;
+  font-size: 32px;
+  color: #fff;
+  margin-top: 30px;
 }
 #product2 h4{
   font-weight: bold;
-font-size: 20px;
-line-height: 24px;
-
-color: #FF4656;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FF4656;
 }
-#product2 .text3{
+#product2 .text3,#productPage .text3{
   font-weight: normal;
-font-size: 14px;
-line-height: 142.8%;
-color: #fff;
+  font-size: 14px;
+  line-height: 142.8%;
+  color: #fff;
 }
 #newProducts2{
   background: #292929;
@@ -4270,3 +4270,161 @@ color: #fff;
 #newProducts2 .price-new{
   color: #fff;
 }
+/*Product Page */
+#productPage{
+  position: relative;
+}
+#productPage h1{
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 122.3%;
+  color: #fff;
+  width: 85%;
+}
+#productPage .date1{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+  color: #FF4656;
+}
+#productPage .text3{
+  width: 95%;
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+#productPage .vertical-line3{
+  position: absolute;
+  border-left: 1.2px solid #FF4656;
+  height: 170px;
+}
+#productPage h5{
+  font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+#productPage .country,.dev-name{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.3);
+}
+#extab2{
+  width: 100%;
+}
+#exTab2 .nav-tabs .nav-item{
+  width: 33.3%;
+
+}
+#exTab2 .tab-content {
+  color : white;
+
+}
+#exTab2 .nav-pills > li > a {
+  border-radius: 0;
+  text-decoration: none;
+}
+#tabPanel{
+  margin-top: 40px;
+}
+#exTab2 .tab-pane{  
+  width: 100% !important;
+  background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 70px;
+}
+#exTab2 h5{
+  margin-left: 8px;
+  padding-top: 35px;
+}
+#exTab2 .speciality,
+#exTab2 .tab-pane p {
+  font-weight: normal;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+#exTab2 .speciality{
+  line-height:40px;
+}
+#exTab2 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+background: none !important;
+}
+#exTab2 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background: linear-gradient(-180deg, #292929 0%, rgba(41, 41, 41, 0) 100%);
+}
+
+#exTab2 .speciality1{
+ color:  rgba(255, 255, 255, 0.3);
+ margin-left: 15px;
+ line-height: 40px;
+ font-size: 13px;
+}
+#productPage .price{
+  margin-left: 2px;
+}
+
+#productPage .old-price{
+  margin-left: 10px;
+  margin-right: 30px;
+}
+#productPage .stepper{
+  margin-left: 30px;
+}
+#productPage .game-image4{
+margin-bottom: 25px;
+}
+
+
+
+/*
+#accountSettings #exTab1 .tab-content {
+  color : white;
+  width: 100%;
+  padding : 5px 15px;
+}
+
+#exTab .nav-tabs > li > a {
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center !important;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3) ;
+  padding-left: 70px;
+}
+.nav-tabs .nav-item{
+  width: 20%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+  height: 60px;
+  background-color: #232323;
+  outline: none !important;
+  border: none !important;
+  margin-bottom: -5px;
+  padding-left: 20px;
+}
+.nav-tabs .nav-item:focus{
+  outline: none !important;
+  border: none !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: #292929 !important;
+  border: none;
+  outline: none;
+  color: #fff !important;
+ }
+#exTab1 .tab-pane{  
+  width: 100% !important;
+  background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
+  position: relative;
