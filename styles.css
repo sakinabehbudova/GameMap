@@ -888,13 +888,11 @@ transform: translateX(-50%) scaleX(1);
      color: rgba(255, 255, 255, 0.3);
      line-height: 71.9%;
      margin-left: 40px;
-
 }
 .footer-text1 a:hover,.footer-text2 a:hover{
     color: #FFFFFF;
     transition: .3s ease-in-out;
 }
-
 #social-icons .icon-image1{
     margin-left: 14px;
     margin-top: 12px;
@@ -3704,15 +3702,18 @@ textarea.ta10em{
 #faq .collapse-btn {
   text-transform: capitalize;
   font-size: 14px !important;
+  bottom: 20px;
   }
-  #faq p{
+  #faq .faq-button{
     position: relative;
   }
+ .faq-menu1{
+    margin-bottom: 20px;
+ }
 .faq-menu{
   background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
   width: 100%;
   position: relative;
-  top: -20px;
   padding-top: 20px;
   }
   .faq-menu p{
