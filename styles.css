@@ -3187,7 +3187,8 @@ input[type=number] {
   padding-top: 82px;
   padding-bottom: 100px;
 }
-#allProducts h3,#contactUs h3,#faq h3,#specialsPage h3,#accountSettings h3,#discountedPage h3{
+#allProducts h3,#contactUs h3,#faq h3,#specialsPage h3,#accountSettings h3,#discountedPage h3,
+#shopping h3{
   font-weight: 700 !important;
   font-size: 25px;
   line-height: 128.8%;
@@ -3813,7 +3814,7 @@ bottom: 0;
 #accountSettings{
   background-image: url('images/GndzcqPmWF9HbnuoIOeIdA\ 1.png');
   background-color: #232323;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat; 
   margin-bottom: -25px;
 
@@ -3942,7 +3943,7 @@ padding-top: 82px;
   border: none;
   padding: 15px;
 }
-tbody tr:nth-child(4n)  {
+#orders-table tbody tr:nth-child(4n)  {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.058) 47.73%, rgba(255, 255, 255, 0) 98.55%);
 }
  .hiddenRow{
@@ -3963,6 +3964,7 @@ tbody tr:nth-child(4n)  {
   font-size: 14px;
   line-height: 142.8%;
   color: rgba(255, 255, 255, 0.3);
+
 }
 .hiddenRow .paymentMethode{
   line-height: 35px;
@@ -3981,7 +3983,8 @@ tbody tr:nth-child(4n)  {
   margin-left: 15px;
 }
 
- #accountSettings table th {
+ #accountSettings table th,
+ #shopping table th {
   padding-top: 40px !important;
   padding-bottom: 20px;
   text-align: left;
@@ -4112,8 +4115,10 @@ tbody tr:nth-child(4n)  {
 }
 #product2 ul li:nth-child(2n){
   background: linear-gradient(90deg, rgba(35, 35, 35, 0) 0%, rgba(35, 35, 35, 0.927083) 46.94%, rgba(35, 35, 35, 0) 96.91%);
-  
 }
+#product2 ul li:nth-child(2n+1){
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.058) 47.73%, rgba(255, 255, 255, 0) 98.55%);}
+
 #product2 ul li{
   list-style: none;
   padding-top: 14px;
@@ -4388,4 +4393,104 @@ margin-bottom: 25px;
 }
 #discountedPage .sale{
   color: #fff;
+}
+/*Shopping*/
+#shopping h3{
+  padding-top: 83px;
+}
+#shopping {
+  background-color: #232323;
+}
+#shopping-table{
+  background: linear-gradient(180deg,   #292929 0%,  rgba(41, 41, 41, 0) 100%);
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+#shopping-table tr:nth-child(2n){
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.058) 47.73%, rgba(255, 255, 255, 0) 98.55%);
+}
+#shopping table th {
+  padding-left: 60px;
+}
+#shopping .sale1{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+.shopping-sale,.shopping-price,.shopping-old-price{
+  position: relative;
+  top: -20px;
+}
+.shopping-sale{
+  font-weight: bold;
+  font-size: 12.791px;
+  color: #fff;
+}
+.shopping-price{
+  font-weight: bold;
+  font-size: 14.4387px;
+  margin-left: 12px;
+  color: #FF4656;
+}
+.shopping-old-price{
+  font-weight: 500;
+  font-size: 11.6236px;
+  margin-left: 12px;
+  color: #444444;
+}
+#shopping .stepper{
+  margin-top: 0;
+  margin-left: 55px;
+}
+#shopping .total{
+  padding-left: 60px;
+}
+#shopping .fa-times-circle{
+ color: rgba(255, 255, 255, 0.1);
+}
+#shopping #back-btn,#shopping #buy-btn,#use-cupon-btn{
+  height: 45px;
+  border-radius: 54px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#shopping #back-btn,#shopping #buy-btn{
+  width: 130px;
+  color: #fff;
+}
+#shopping #back-btn{
+ background: rgba(255, 255, 255, 0.1);
+ margin-left: 30px;
+}
+#shopping #buy-btn{
+  margin-right: 30px;
+  background: #FF4656;
+  margin-left: 30px;
+}
+#shopping .shopping-total{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+}
+#shopping .shooping-total-price{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 50px;
+  margin-left: 15px;
+  color: #FF4656;
+}
+#shopping #use-cupon-btn{
+  width: 100%;
+  right: 30px;
+  position: relative;
+  background:#fff;
+  color: #232323;
+  margin-bottom: 180px;
 }
