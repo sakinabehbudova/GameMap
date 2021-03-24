@@ -9,7 +9,7 @@ body input {
 #header{ 
     background: #232323;
     height: 70px;
-    overflow: hidden;
+ /*   overflow: hidden;*/
 }
 .logo{
     margin-top: 19px;
@@ -113,11 +113,11 @@ body input {
   width: 18px;
   height: 18px;
   border-radius: 18px;
-  margin-top: 33px;
   z-index: 5;
   background-color: #ff4656;
   left: 15px ;
   bottom: 5px;
+  top:42px;
 }
 .basket{
   position: relative;
@@ -125,12 +125,11 @@ body input {
 .user .number{
   position: absolute;
   color: #FFF;
-  margin-top: 32.5px;
   z-index: 10;
   font-size: 13px;
   font-weight: bold;
- left: 19.5px;
-  bottom: 4.5px;
+  left: 19.5px;
+  top:41px
 }
 .username{
   width: 90px;
@@ -156,8 +155,46 @@ body input {
   height: 33px;
   border-radius: 50%;
   background-color: #ff4656;
- margin-top: 19px;
- top: 0;
+  margin-top: 19px;
+  top: 0;
+}
+#account-dropdown{
+  width: 26px;
+}
+
+#dropdown1 .dropdown-menu{
+ background-color: #323232 ;
+ width: 200px;
+}
+#dropdown1 .username{
+  font-weight: 600;
+  font-size: 15px;
+}
+.user-id{
+  font-weight: 500;
+  font-size: 10px;
+  margin-top: -12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.user-row{
+  color: #FFF;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+#dropdown1 a{
+  color:#FFF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+#dropdown1 a:hover{
+  color:#323232 !important;
+}
+.log-out{
+  color: rgba(255, 255, 255, 0.3) !important;
 }
 
 ::-webkit-scrollbar{
@@ -3248,8 +3285,8 @@ input[type=number] {
 }
 .dropdown-toggle::before {
   position: absolute;
-  content:url('images/Polygon\ 2.png');
-  padding-left: 216px;
+ /* content:url('images/Polygon\ 2.png'); */
+
 }
 #genre-menu {
   padding-top: 30px;
@@ -4493,4 +4530,12 @@ margin-bottom: 25px;
   background:#fff;
   color: #232323;
   margin-bottom: 180px;
+}
+.test{
+  color: #00a7f8;
+  position: absolute;
+  z-index: 99;
+  bottom: -20px;
+  width: 100%;
+ background-color: #2ecc71;
 }

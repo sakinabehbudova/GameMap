@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -40,11 +41,13 @@
                 <div class="search-box col-6 text-center">
                     <input class="search" id="search" type="text" placeholder="Search Product..." aria-label="Search">
                 </div>
-                <div class="start-buttons col-3 justify-content-end">
+
+                <!--       <div class="start-buttons col-3 justify-content-end">
                     <a href="login.html" id="sign-in" type="button" class=" btn btn-link">Sign in</a>
                     <a href="register.html" id="register" type="button" class="btn btn-link">Register</a>
                 </div>
-                <!--      <div class="user col-3 ">
+                -->
+                <div class="user col-3">
                     <div class="basket">
                         <a href=""> <img class="basket" src="images/Vector3.svg" alt="">
                             <div class="circle"></div>
@@ -52,12 +55,50 @@
                             <div class="number">0</div>
                         </a>
                     </div>
-                    <p class="username"><a href="">Dadashova</a></p>
-                    <a href="">
-                        <div class="user-photo-bg"></div>
-                        <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
-                    </a>
-                </div> -->
+                    <p class="username"><a href="">Behbudova</a></p>
+
+                    <div id="dropdown1" class="dropdown show">
+                        <a class="btn  dropdown-toggle" href="#" role="button" id="account-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="user-photo-bg"></div>
+                            <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <div class="row ml-1">
+                                <div class="col-3">
+                                    <a href="">
+                                        <div class="user-photo-bg"></div>
+                                        <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-9">
+                                    <p class="username ml-3"><a href="">Behbudova</a></p>
+                                    <div class="user-id ml-3">ID: 15485A</div>
+                                    <div class="row ml-3 user-row">
+                                        <div>2 <img src="images/gift1.svg" alt=""></div>
+                                        <div>109 <img src="images/Group 253.svg" alt=""></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <a class="dropdown-item" href="#">Account settings</a>
+                            <a class="dropdown-item" href="faq.html">FAQ</a>
+                            <a class="dropdown-item log-out" href="#">Log out</a>
+                        </div>
+                    </div>
+                    <!--      <div class="test">
+                        <a href="">
+                            <div class="user-photo-bg"></div>
+                            <img class="user-photo" src="images/Ellipse 2.jpg" alt="">
+                            <p><a href="">Account settings </a></p>
+                            <p><a href="faq.html">FAQ </a></p>
+                            <p><a href="">Log Out </a></p>
+                            
+                        </a>
+                    </div>   -->
+
+                </div>
             </div>
         </div>
     </div>
